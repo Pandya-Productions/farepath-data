@@ -1,0 +1,45 @@
+{
+  "$comment": [
+    "Journey-time model. Edge time = distance / runningSpeed + dwell at the arriving station.",
+    "",
+    "These are AVERAGE running speeds between adjacent stops, not top speeds, and they are",
+    "calibrated against real end-to-end journey times rather than picked from the air:",
+    "",
+    "  Western slow  Churchgate–Virar   60.18 km, 28 hops → 102 min   (real ≈ 95–105 min)",
+    "  Western fast  Churchgate–Virar   60.18 km, 15 hops →  73 min   (real ≈ 70–75 min)",
+    "  Line 3        Aarey–Cuffe Parade 32.69 km, 26 hops →  54 min   (real ≈ 50 min)",
+    "  Line 1        Versova–Ghatkopar  10.90 km, 11 hops →  19 min   (real ≈ 21 min)",
+    "",
+    "Times only affect route RANKING, never fare, so they are lower-risk than fare data — but",
+    "a badly wrong time model would recommend the wrong route, so it is still calibrated.",
+    "",
+    "The monorail figure is the one primary-sourced value here: MMRDA publishes a scheduled speed",
+    "of 31 km/h (mmrda.maharashtra.gov.in/en/division/mono-piu/present-status)."
+  ],
+  "modes": {
+    "metro": {
+      "runningSpeedKmph": 45,
+      "dwellSeconds": 25,
+      "note": "Typical Indian metro average running speed between adjacent stations."
+    },
+    "suburban-rail": {
+      "runningSpeedKmph": 40,
+      "dwellSeconds": 25,
+      "note": "Slow (all-stops) EMU services."
+    },
+    "monorail": {
+      "runningSpeedKmph": 31,
+      "dwellSeconds": 25,
+      "note": "MMRDA-published scheduled speed. Primary source."
+    }
+  },
+  "serviceClassOverrides": {
+    "fast": {
+      "runningSpeedKmph": 55,
+      "dwellSeconds": 30,
+      "note": "Fast services run longer stretches at higher speed and hold slightly longer at their fewer stops."
+    }
+  },
+  "transferPenaltySeconds": 180,
+  "$transferPenaltyNote": "Added on top of walk time when changing line, to represent waiting for the next service. Applied by the routing engine, not baked into edges."
+}

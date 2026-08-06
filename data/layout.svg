@@ -1,0 +1,333 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="1000" height="1500">
+<rect width="100%" height="100%" fill="#fcfcfb"/>
+<g><path d="M62.3 720.0 L71.4 720.0 L74.9 723.5 L83.9 723.5 L93.9 723.5 L98.0 719.4 L108.0 719.4 L119.5 719.4 L130.3 730.2 L141.7 730.2 L150.7 730.2 L158.3 737.8 L167.3 737.8 L182.5 737.8 L191.3 746.6 L206.5 746.6 L216.1 746.6 L222.2 752.7 L231.9 752.7 L240.1 752.7 L248.3 760.9 L256.5 760.9 L262.6 760.9 L280.2 778.5 L286.4 778.5 L314.9 807.0 L317.3 807.0 L336.5 826.2 L339.0 826.2 L339.0 827.3 L356.8 845.1 L356.8 846.2" fill="none" stroke="#0559d2" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Line 1</title></path>
+<path d="M92.3 713.6 L92.3 703.9 L95.9 700.3 L95.9 690.6 L95.9 688.7 L104.6 680.0 L104.6 678.1 L104.6 674.4 L112.1 666.9 L112.1 663.2 L112.1 654.2 L113.3 653.1 L113.3 644.1 L113.3 638.0 L120.7 630.7 L120.7 624.6 L120.7 614.6 L122.3 613.0 L122.3 603.1 L122.3 594.6 L120.1 592.4 L120.1 583.9 L120.1 578.3 L124.5 573.9 L124.5 568.3 L124.5 565.5 L131.9 558.1 L131.9 555.4 L131.9 553.1 L141.7 543.3 L141.7 541.1 L141.7 535.1 L142.7 534.1 L142.7 528.1 L142.7 524.7 L149.7 517.8 L149.7 514.4 L149.7 510.6 L155.5 504.7 L155.5 500.9 L155.9 500.9 L166.3 490.5 L166.6 490.5 L181.0 490.5 L184.5 486.9 L198.9 486.9 L198.9 491.0 L203.0 495.1 L203.0 499.2" fill="none" stroke="#ff7643" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Line 2A</title></path>
+<path d="M421.5 981.3 L413.1 981.3 L412.5 980.7 L404.1 980.7 L401.1 980.7 L375.9 1005.9 L372.8 1005.9 L362.7 1005.9 L357.2 1000.4 L347.0 1000.4 L346.1 1000.4 L337.3 991.6 L336.4 991.6" fill="none" stroke="#ff7643" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Line 2B</title></path>
+<path d="M257.7 704.9 L245.6 704.9 L235.3 715.2 L223.2 715.2 L223.2 722.3 L227.9 727.0 L227.9 734.1 L227.9 737.8 L244.0 753.8 L244.0 757.5 L244.0 758.5 L230.0 772.5 L230.0 773.5 L211.3 773.5 L210.6 772.8 L192.0 772.8 L180.8 772.8 L149.3 804.2 L138.2 804.2 L138.2 820.9 L102.6 856.5 L102.6 873.1 L102.6 895.1 L109.7 902.2 L109.7 924.1 L109.7 936.1 L137.3 963.6 L137.3 975.6 L137.3 994.9 L127.5 1004.7 L127.5 1024.1 L127.0 1024.1 L107.8 1043.2 L107.3 1043.2 L107.3 1082.3 L103.7 1082.3 L90.0 1096.0 L86.4 1096.0 L78.9 1096.0 L67.4 1107.5 L60.0 1107.5 L60.0 1118.4 L61.8 1120.2 L61.8 1131.1 L61.8 1132.9 L74.5 1145.6 L74.5 1147.5 L74.5 1154.2 L90.0 1169.6 L90.0 1176.3 L90.0 1180.6 L86.1 1184.5 L86.1 1188.8 L86.1 1192.6 L81.5 1197.2 L81.5 1201.0 L81.5 1204.8 L91.8 1215.2 L91.8 1219.1 L93.0 1219.1 L105.2 1231.3 L106.3 1231.3 L107.3 1231.3 L115.5 1239.4 L116.5 1239.4 L116.5 1244.5 L120.9 1249.0 L120.9 1254.0 L117.1 1254.0 L112.5 1258.6 L108.7 1258.6 L108.7 1263.2 L105.3 1266.6 L105.3 1271.2 L105.3 1273.5 L98.2 1280.5 L98.2 1282.8" fill="none" stroke="#2fb5d8" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Line 3</title></path>
+<path d="M155.5 743.3 L155.5 730.0 L163.2 722.4 L163.2 709.1 L163.2 694.8 L165.5 692.5 L165.5 678.2 L165.5 671.6 L171.3 665.8 L171.3 659.1 L171.3 647.2 L179.4 639.0 L179.4 627.0 L179.4 618.4 L178.9 617.8 L178.9 609.2 L178.9 603.3 L180.0 602.2 L180.0 596.3 L180.0 590.1 L185.4 584.7 L185.4 578.6 L185.4 577.3 L193.3 569.5 L193.3 568.2 L193.3 562.2 L201.3 554.2 L201.3 548.2 L201.3 545.5 L195.1 539.4 L195.1 536.7 L195.1 530.7 L192.9 528.4 L192.9 522.3 L192.9 517.0 L195.1 514.8 L195.1 509.5 L195.1 508.4 L203.0 500.4 L203.0 499.2" fill="none" stroke="#b58bf9" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Line 7</title></path>
+<path d="M228.6 459.4 L228.6 465.0 L230.3 466.7 L230.3 472.3 L228.4 472.3 L215.5 485.2 L213.6 485.2 L213.6 486.9 L203.0 497.5 L203.0 499.2" fill="none" stroke="#b58bf9" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Line 9</title></path>
+<path d="M666.6 908.7 L665.0 908.7 L657.6 901.3 L655.9 901.3 L651.6 901.3 L647.9 904.9 L643.5 904.9 L643.5 913.3 L639.0 917.7 L639.0 926.1 L639.0 936.1 L636.7 938.5 L636.7 948.5 L636.7 958.5 L633.5 961.7 L633.5 971.6 L633.1 971.6 L619.5 985.2 L619.1 985.2 L619.1 987.3 L611.4 995.0 L611.4 997.2 L611.4 1000.7 L602.8 1009.3 L602.8 1012.9 L602.8 1013.7 L594.4 1022.1 L594.4 1022.8 L588.5 1022.8 L587.4 1023.9 L581.5 1023.9" fill="none" stroke="#12c281" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Navi Mumbai Metro Line 1</title></path>
+<path d="M105.3 1246.1 L105.3 1245.0 L93.3 1233.1 L93.3 1232.0 L92.8 1232.0 L79.4 1218.6 L78.9 1218.6 L78.9 1213.8 L68.7 1203.6 L68.7 1198.7 L68.7 1194.4 L73.5 1189.5 L73.5 1185.3 L73.5 1179.4 L83.0 1169.9 L83.0 1164.0 L83.0 1155.7 L92.0 1146.7 L92.0 1138.5 L92.0 1135.3 L103.2 1124.2 L103.2 1121.0 L103.2 1118.7 L122.2 1099.7 L122.2 1097.4 L122.2 1089.0 L129.0 1082.3 L129.0 1073.9 L129.0 1059.9 L122.2 1053.2 L122.2 1039.1 L122.2 1028.9 L89.8 996.5 L89.8 986.3 L89.8 959.7 L79.4 949.2 L79.4 922.6 L79.4 894.2 L87.7 885.9 L87.7 857.5 L87.7 834.1 L109.0 812.9 L109.0 789.6 L109.0 772.0 L129.3 751.6 L129.3 734.0 L129.3 719.6 L145.9 703.0 L145.9 688.5 L145.9 678.4 L151.8 672.5 L151.8 662.3 L151.8 650.0 L152.8 649.1 L152.8 636.8 L152.8 618.5 L155.1 616.3 L155.1 598.0 L155.1 588.3 L164.9 578.6 L164.9 568.9 L164.9 556.7 L178.0 543.6 L178.0 531.3 L178.0 519.4 L185.1 512.3 L185.1 500.4 L185.1 481.4 L179.0 475.3 L179.0 456.3 L179.0 439.6 L173.7 434.3 L173.7 417.5 L173.7 397.5 L163.2 387.0 L163.2 367.0 L163.2 361.0 L140.0 337.8 L140.0 331.8 L140.0 321.7 L120.6 302.3 L120.6 292.2 L120.6 276.8 L112.5 268.6 L112.5 253.2" fill="none" stroke="#b9a624" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Western Line</title></path>
+<path d="M105.3 1246.1 L105.3 1245.0 L93.3 1233.1 L93.3 1232.0 L92.8 1232.0 L79.4 1218.6 L78.9 1218.6 L78.9 1213.8 L68.7 1203.6 L68.7 1198.7 L68.7 1194.4 L73.5 1189.5 L73.5 1185.3 L73.5 1165.7 L122.2 1117.0 L122.2 1097.4 L122.2 1058.0 L89.8 1025.6 L89.8 986.3 L89.8 879.9 L129.3 840.4 L129.3 734.0 L129.3 657.0 L178.0 608.4 L178.0 531.3 L178.0 519.4 L185.1 512.3 L185.1 500.4 L185.1 481.4 L179.0 475.3 L179.0 456.3 L179.0 439.6 L173.7 434.3 L173.7 417.5 L173.7 397.5 L163.2 387.0 L163.2 367.0 L163.2 361.0 L140.0 337.8 L140.0 331.8 L140.0 321.7 L120.6 302.3 L120.6 292.2 L120.6 276.8 L112.5 268.6 L112.5 253.2" fill="none" stroke="#b9a624" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Western Line (fast)</title></path>
+<path d="M128.8 1243.7 L128.8 1234.9 L129.6 1234.0 L129.6 1225.2 L129.6 1218.0 L130.9 1216.7 L130.9 1209.5 L130.9 1205.4 L109.6 1184.1 L109.6 1180.0 L109.6 1170.6 L107.7 1168.7 L107.7 1159.3 L107.7 1152.9 L109.1 1151.6 L109.1 1145.2 L109.1 1130.0 L112.2 1126.9 L112.2 1111.7 L112.2 1109.5 L122.2 1099.5 L122.2 1097.4 L122.2 1097.0 L141.5 1077.8 L141.5 1077.4 L141.5 1075.3 L187.2 1029.6 L187.2 1027.4 L191.3 1027.4 L267.6 951.2 L271.7 951.2 L271.7 942.7 L331.5 882.9 L331.5 874.5 L336.7 874.5 L352.0 859.2 L357.3 859.2 L357.3 835.4 L390.6 802.0 L390.6 778.2 L390.6 760.5 L380.6 750.5 L380.6 732.8 L380.6 725.3 L395.0 711.0 L395.0 703.5 L395.0 698.9 L407.7 686.2 L407.7 681.6 L407.7 671.9 L420.5 659.1 L420.5 649.3 L427.1 649.3 L445.1 631.3 L451.7 631.3 L464.3 631.3 L473.1 622.4 L485.7 622.4 L498.9 622.4 L520.1 643.5 L533.3 643.5 L543.7 643.5 L552.8 652.6 L563.2 652.6 L571.0 652.6 L599.2 624.4 L607.0 624.4 L607.9 624.4 L617.0 615.2 L617.9 615.2 L619.2 615.2 L629.9 604.6 L631.2 604.6 L649.1 604.6 L654.1 599.6 L672.1 599.6" fill="none" stroke="#227702" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Central Line</title></path>
+<path d="M128.8 1243.7 L128.8 1221.4 L109.6 1202.3 L109.6 1180.0 L109.6 1145.0 L122.2 1132.4 L122.2 1097.4 L123.9 1097.4 L270.0 951.2 L271.7 951.2 L271.7 948.0 L357.3 862.4 L357.3 859.2 L357.3 792.4 L451.7 698.0 L451.7 631.3 L526.8 631.3 L542.8 615.2 L617.9 615.2 L637.2 615.2 L652.8 599.6 L672.1 599.6 L685.2 599.6 L691.2 593.6 L704.4 593.6 L704.4 581.2 L714.1 571.4 L714.1 559.0 L714.1 556.6 L743.2 527.5 L743.2 525.1 L743.2 484.6 L744.3 483.6 L744.3 443.2 L744.3 437.7 L786.0 396.0 L786.0 390.5 L788.6 390.5 L819.5 359.7 L822.1 359.7 L822.1 326.2 L826.5 321.7 L826.5 288.2 L826.5 271.3 L840.0 257.8 L840.0 240.9 L846.8 240.9 L869.8 217.8 L876.6 217.8 L876.6 204.5 L894.3 186.7 L894.3 173.3 L912.6 173.3 L921.7 164.2 L940.0 164.2" fill="none" stroke="#227702" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Central Line (Kasara)</title></path>
+<path d="M128.8 1243.7 L128.8 1221.4 L109.6 1202.3 L109.6 1180.0 L109.6 1145.0 L122.2 1132.4 L122.2 1097.4 L123.9 1097.4 L270.0 951.2 L271.7 951.2 L271.7 948.0 L357.3 862.4 L357.3 859.2 L357.3 792.4 L451.7 698.0 L451.7 631.3 L526.8 631.3 L542.8 615.2 L617.9 615.2 L637.2 615.2 L652.8 599.6 L672.1 599.6 L676.4 599.6 L692.8 616.0 L697.1 616.0 L697.1 616.5 L718.7 638.1 L718.7 638.6 L723.1 638.6 L741.8 657.2 L746.2 657.2 L746.2 664.6 L816.4 734.8 L816.4 742.2 L816.4 771.3 L886.7 841.6 L886.7 870.7 L886.7 887.9 L903.4 904.6 L903.4 921.8 L903.4 951.3 L902.7 952.0 L902.7 981.6 L902.7 1023.2 L909.6 1030.0 L909.6 1071.6 L909.6 1107.9 L888.8 1128.6 L888.8 1164.9 L888.8 1183.4 L883.4 1188.7 L883.4 1207.2 L883.4 1229.8 L872.0 1241.2 L872.0 1263.8 L872.0 1270.7 L870.6 1272.2 L870.6 1279.1 L870.6 1290.2 L880.1 1299.7 L880.1 1310.7 L880.1 1320.5 L885.6 1326.0 L885.6 1335.8" fill="none" stroke="#227702" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Central Line (Khopoli)</title></path>
+<path d="M128.8 1243.7 L128.8 1234.9 L129.6 1234.0 L129.6 1225.2 L129.6 1218.0 L130.9 1216.7 L130.9 1209.5 L132.3 1209.5 L140.5 1201.3 L142.0 1201.3 L142.0 1192.6 L139.5 1190.1 L139.5 1181.5 L139.5 1175.3 L134.4 1170.3 L134.4 1164.1 L138.4 1164.1 L160.0 1142.6 L163.9 1142.6 L163.9 1130.9 L172.1 1122.7 L172.1 1111.0 L172.1 1091.9 L190.7 1073.4 L190.7 1054.4 L190.7 1044.7 L211.6 1023.8 L211.6 1014.1 L211.6 1012.7 L271.7 952.6 L271.7 951.2 L286.4 951.2 L297.6 940.0 L312.3 940.0 L322.5 940.0 L331.6 949.0 L341.7 949.0 L346.4 949.0 L369.5 972.1 L374.1 972.1 L381.2 972.1 L401.8 992.8 L408.8 992.8 L438.0 992.8 L499.8 931.0 L528.9 931.0 L533.4 931.0 L540.8 923.6 L545.2 923.6 L545.2 929.8 L557.5 942.1 L557.5 948.3 L557.5 973.5 L553.4 977.7 L553.4 1002.9 L553.4 1015.8 L551.9 1017.3 L551.9 1030.2 L561.9 1030.2 L568.1 1036.5 L578.1 1036.5 L583.6 1036.5 L610.0 1010.1 L615.5 1010.1 L617.4 1010.1 L635.3 1028.0 L637.2 1028.0 L637.8 1028.0 L653.7 1043.8 L654.3 1043.8 L655.0 1043.8 L683.0 1071.9 L683.7 1071.9" fill="none" stroke="#b4065f" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Harbour Line</title></path>
+<path d="M128.8 1243.7 L128.8 1234.9 L129.6 1234.0 L129.6 1225.2 L129.6 1218.0 L130.9 1216.7 L130.9 1209.5 L132.3 1209.5 L140.5 1201.3 L142.0 1201.3 L142.0 1192.6 L139.5 1190.1 L139.5 1181.5 L139.5 1175.3 L134.4 1170.3 L134.4 1164.1 L138.4 1164.1 L160.0 1142.6 L163.9 1142.6 L163.9 1130.9 L172.1 1122.7 L172.1 1111.0 L172.1 1093.1 L165.5 1086.4 L165.5 1068.5 L158.6 1068.5 L129.2 1039.1 L122.2 1039.1 L122.2 1028.9 L89.8 996.5 L89.8 986.3 L89.8 959.7 L79.4 949.2 L79.4 922.6 L79.4 894.2 L87.7 885.9 L87.7 857.5 L87.7 834.1 L109.0 812.9 L109.0 789.6 L109.0 772.0 L129.3 751.6 L129.3 734.0 L129.3 719.6 L145.9 703.0 L145.9 688.5 L145.9 678.4 L151.8 672.5 L151.8 662.3 L151.8 650.0 L152.8 649.1 L152.8 636.8" fill="none" stroke="#b4065f" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Harbour Line (Goregaon)</title></path>
+<path d="M683.7 1071.9 L683.0 1071.9 L655.0 1043.8 L654.3 1043.8 L653.7 1043.8 L637.8 1028.0 L637.2 1028.0 L635.3 1028.0 L617.4 1010.1 L615.5 1010.1 L610.0 1010.1 L583.6 1036.5 L578.1 1036.5 L568.1 1036.5 L561.9 1030.2 L551.9 1030.2 L551.9 1017.3 L553.4 1015.8 L553.4 1002.9 L553.4 977.7 L557.5 973.5 L557.5 948.3 L557.4 897.9 L557.4 870.1 L544.6 857.3 L544.6 829.5 L544.6 817.9 L534.8 808.0 L534.8 796.5 L534.8 778.4 L521.0 764.7 L521.0 746.6 L521.0 729.1 L506.5 714.7 L506.5 697.2 L506.5 682.7 L488.0 664.1 L488.0 649.6 L479.0 649.6 L460.7 631.3 L451.7 631.3" fill="none" stroke="#773ac1" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Trans-Harbour Line</title></path>
+<path d="M451.7 631.3 L460.7 631.3 L479.0 649.6 L488.0 649.6 L488.0 664.1 L506.5 682.7 L506.5 697.2 L506.5 714.7 L521.0 729.1 L521.0 746.6 L521.0 764.7 L534.8 778.4 L534.8 796.5 L534.8 808.0 L544.6 817.9 L544.6 829.5 L544.6 857.3 L557.4 870.1 L557.4 897.9 L557.4 904.6 L545.2 916.8 L545.2 923.6 L540.8 923.6 L533.4 931.0 L528.9 931.0" fill="none" stroke="#773ac1" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Trans-Harbour Line (Vashi)</title></path>
+<path d="M553.4 1002.9 L553.4 1015.8 L551.9 1017.3 L551.9 1030.2 L551.9 1076.2 L543.4 1084.6 L543.4 1130.6 L543.4 1136.3 L520.5 1159.3 L520.5 1164.9 L520.5 1201.1 L502.1 1219.4 L502.1 1255.6 L489.9 1255.6 L461.6 1283.9 L449.3 1283.9 L441.5 1283.9 L407.7 1317.6 L399.9 1317.6 L391.8 1317.6 L383.9 1325.5 L375.8 1325.5" fill="none" stroke="#be6b0b" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Nerul–Uran Line</title></path>
+<path d="M578.1 1036.5 L578.1 1066.2 L543.4 1100.9 L543.4 1130.6 L543.4 1136.3 L520.5 1159.3 L520.5 1164.9 L520.5 1201.1 L502.1 1219.4 L502.1 1255.6 L489.9 1255.6 L461.6 1283.9 L449.3 1283.9 L441.5 1283.9 L407.7 1317.6 L399.9 1317.6 L391.8 1317.6 L383.9 1325.5 L375.8 1325.5" fill="none" stroke="#be6b0b" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"><title>Nerul–Uran Line (Belapur)</title></path>
+<path d="M330.7 956.7 L330.7 967.2 L314.8 983.1 L314.8 993.5 L314.8 1004.3 L305.1 1014.0 L305.1 1024.8 L305.5 1049.7 L305.5 1052.3 L287.5 1070.3 L287.5 1072.9 L265.5 1072.9 L262.6 1075.9 L240.6 1075.9 L240.6 1068.8 L230.3 1058.5 L230.3 1051.4 L226.8 1051.4 L220.4 1057.8 L216.9 1057.8 L216.9 1058.6 L201.5 1073.9 L201.5 1074.6 L201.5 1076.8 L190.3 1088.0 L190.3 1090.2 L188.6 1090.2 L179.5 1099.3 L177.8 1099.3 L167.9 1099.3 L162.4 1104.8 L152.5 1104.8 L152.5 1105.8 L140.9 1117.4 L140.9 1118.4 L140.9 1122.1 L132.6 1130.4 L132.6 1134.2 L132.3 1148.4 L115.7 1148.4 L113.7 1150.4 L97.2 1150.4 L97.2 1157.0 L96.0 1158.2 L96.0 1164.8" fill="none" stroke="#898781" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.5" stroke-dasharray="7 5"><title>Monorail</title></path></g>
+<g><circle cx="62.3" cy="720.0" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Versova</title></circle>
+<circle cx="83.9" cy="723.5" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>D. N. Nagar</title></circle>
+<circle cx="108.0" cy="719.4" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Azad Nagar</title></circle>
+<circle cx="141.7" cy="730.2" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Andheri</title></circle>
+<circle cx="167.3" cy="737.8" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Western Express Highway (eastbound)</title></circle>
+<circle cx="206.5" cy="746.6" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Chakala - J.B. Nagar</title></circle>
+<circle cx="231.9" cy="752.7" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Airport Road</title></circle>
+<circle cx="256.5" cy="760.9" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Marol Naka</title></circle>
+<circle cx="286.4" cy="778.5" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Saki Naka</title></circle>
+<circle cx="314.9" cy="807.0" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Asalpha</title></circle>
+<circle cx="339.0" cy="826.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Jagruti Nagar</title></circle>
+<circle cx="356.8" cy="846.2" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Ghatkopar</title></circle>
+<circle cx="92.3" cy="713.6" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Andheri (West)</title></circle>
+<circle cx="95.9" cy="690.6" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Lower Oshiwara</title></circle>
+<circle cx="104.6" cy="678.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Oshiwara</title></circle>
+<circle cx="112.1" cy="663.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Goregaon (West)</title></circle>
+<circle cx="113.3" cy="644.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Bangur Nagar</title></circle>
+<circle cx="120.7" cy="624.6" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Lower Malad</title></circle>
+<circle cx="122.3" cy="603.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Malad West</title></circle>
+<circle cx="120.1" cy="583.9" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Valnai-Meeth Chowky</title></circle>
+<circle cx="124.5" cy="568.3" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Dahanukarwadi</title></circle>
+<circle cx="131.9" cy="555.4" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Kandivali (West)</title></circle>
+<circle cx="141.7" cy="541.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Shimpoli</title></circle>
+<circle cx="142.7" cy="528.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Borivali (West)</title></circle>
+<circle cx="149.7" cy="514.4" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Eksar</title></circle>
+<circle cx="155.5" cy="500.9" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Mandapeshwar - I.C. Colony</title></circle>
+<circle cx="166.6" cy="490.5" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Rushi Sankul</title></circle>
+<circle cx="198.9" cy="486.9" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Anand Nagar</title></circle>
+<circle cx="203.0" cy="499.2" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Dahisar (East)</title></circle>
+<circle cx="421.5" cy="981.3" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Mandale</title></circle>
+<circle cx="404.1" cy="980.7" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Mankhurd</title></circle>
+<circle cx="372.8" cy="1005.9" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Deonar</title></circle>
+<circle cx="347.0" cy="1000.4" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Shivaji Chowk (Chembur)</title></circle>
+<circle cx="336.4" cy="991.6" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Diamond Garden</title></circle>
+<circle cx="257.7" cy="704.9" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Aarey JVLR</title></circle>
+<circle cx="223.2" cy="715.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>SEEPZ</title></circle>
+<circle cx="227.9" cy="734.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>MIDC - Andheri</title></circle>
+<circle cx="244.0" cy="757.5" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Marol Naka</title></circle>
+<circle cx="230.0" cy="773.5" r="2.5" fill="#0b0b0b" opacity="0.85"><title>CSMIA International T2</title></circle>
+<circle cx="192.0" cy="772.8" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Sahar Road</title></circle>
+<circle cx="138.2" cy="804.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>CSMIA Domestic</title></circle>
+<circle cx="102.6" cy="873.1" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Santacruz</title></circle>
+<circle cx="109.7" cy="924.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Bandra Colony</title></circle>
+<circle cx="137.3" cy="975.6" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Bandra Kurla Complex (BKC)</title></circle>
+<circle cx="127.5" cy="1024.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Dharavi</title></circle>
+<circle cx="107.3" cy="1043.2" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Shitala Devi Mandir</title></circle>
+<circle cx="107.3" cy="1082.3" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Dadar</title></circle>
+<circle cx="86.4" cy="1096.0" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Siddhivinayak Temple</title></circle>
+<circle cx="60.0" cy="1107.5" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Worli</title></circle>
+<circle cx="61.8" cy="1131.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Acharya Atre Chowk</title></circle>
+<circle cx="74.5" cy="1147.5" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Science Museum</title></circle>
+<circle cx="90.0" cy="1176.3" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Mahalaxmi</title></circle>
+<circle cx="86.1" cy="1188.8" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Jagannath Shankar Sheth</title></circle>
+<circle cx="81.5" cy="1201.0" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Grant Road</title></circle>
+<circle cx="91.8" cy="1219.1" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Girgaon</title></circle>
+<circle cx="106.3" cy="1231.3" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Kalbadevi</title></circle>
+<circle cx="116.5" cy="1239.4" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Chhatrapati Shivaji Maharaj Terminus</title></circle>
+<circle cx="120.9" cy="1254.0" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Hutatma Chowk</title></circle>
+<circle cx="108.7" cy="1258.6" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Churchgate</title></circle>
+<circle cx="105.3" cy="1271.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Vidhan Bhavan</title></circle>
+<circle cx="98.2" cy="1282.8" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Cuffe Parade</title></circle>
+<circle cx="155.5" cy="743.3" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Gundavali</title></circle>
+<circle cx="163.2" cy="709.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Mogra</title></circle>
+<circle cx="165.5" cy="678.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Jogeshwari (East)</title></circle>
+<circle cx="171.3" cy="659.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Goregaon (East)</title></circle>
+<circle cx="179.4" cy="627.0" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Aarey</title></circle>
+<circle cx="178.9" cy="609.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Dindoshi</title></circle>
+<circle cx="180.0" cy="596.3" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Kurar</title></circle>
+<circle cx="185.4" cy="578.6" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Akurli</title></circle>
+<circle cx="193.3" cy="568.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Mahindra &amp; Mahindra</title></circle>
+<circle cx="201.3" cy="548.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Magathane</title></circle>
+<circle cx="195.1" cy="536.7" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Devipada</title></circle>
+<circle cx="192.9" cy="522.3" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Rashtriya Udyan</title></circle>
+<circle cx="195.1" cy="509.5" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Ovaripada</title></circle>
+<circle cx="228.6" cy="459.4" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Kashigaon</title></circle>
+<circle cx="230.3" cy="472.3" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Miragaon</title></circle>
+<circle cx="213.6" cy="485.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Pandurang Wadi</title></circle>
+<circle cx="666.6" cy="908.7" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Pendhar</title></circle>
+<circle cx="655.9" cy="901.3" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Panchanand</title></circle>
+<circle cx="643.5" cy="904.9" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Sector 34</title></circle>
+<circle cx="639.0" cy="926.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Pethpada</title></circle>
+<circle cx="636.7" cy="948.5" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Central Park</title></circle>
+<circle cx="633.5" cy="971.6" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Khargar Village</title></circle>
+<circle cx="619.1" cy="985.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Kendriya Vihar</title></circle>
+<circle cx="611.4" cy="997.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Utsav Chowk</title></circle>
+<circle cx="602.8" cy="1012.9" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Belpada</title></circle>
+<circle cx="594.4" cy="1022.8" r="2.5" fill="#0b0b0b" opacity="0.85"><title>RBI Colony</title></circle>
+<circle cx="581.5" cy="1023.9" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>CBD Belapur</title></circle>
+<circle cx="105.3" cy="1246.1" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Churchgate</title></circle>
+<circle cx="93.3" cy="1232.0" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Marine Lines</title></circle>
+<circle cx="78.9" cy="1218.6" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Charni Road</title></circle>
+<circle cx="68.7" cy="1198.7" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Grant Road</title></circle>
+<circle cx="73.5" cy="1185.3" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Mumbai Central</title></circle>
+<circle cx="83.0" cy="1164.0" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Mahalaxmi</title></circle>
+<circle cx="92.0" cy="1138.5" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Lower Parel</title></circle>
+<circle cx="103.2" cy="1121.0" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Prabhadevi</title></circle>
+<circle cx="122.2" cy="1097.4" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Dadar</title></circle>
+<circle cx="129.0" cy="1073.9" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Matunga Road</title></circle>
+<circle cx="122.2" cy="1039.1" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Mahim Junction</title></circle>
+<circle cx="89.8" cy="986.3" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Bandra</title></circle>
+<circle cx="79.4" cy="922.6" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Khar Road</title></circle>
+<circle cx="87.7" cy="857.5" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Santa Cruz</title></circle>
+<circle cx="109.0" cy="789.6" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Vile Parle</title></circle>
+<circle cx="129.3" cy="734.0" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Andheri</title></circle>
+<circle cx="145.9" cy="688.5" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Jogeshwari</title></circle>
+<circle cx="151.8" cy="662.3" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Ram Mandir</title></circle>
+<circle cx="152.8" cy="636.8" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Goregaon</title></circle>
+<circle cx="155.1" cy="598.0" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Malad</title></circle>
+<circle cx="164.9" cy="568.9" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Kandivali</title></circle>
+<circle cx="178.0" cy="531.3" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Borivali</title></circle>
+<circle cx="185.1" cy="500.4" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Dahisar</title></circle>
+<circle cx="179.0" cy="456.3" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Mira Road</title></circle>
+<circle cx="173.7" cy="417.5" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Bhayandar</title></circle>
+<circle cx="163.2" cy="367.0" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Naigaon</title></circle>
+<circle cx="140.0" cy="331.8" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Vasai Road</title></circle>
+<circle cx="120.6" cy="292.2" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Nalla Sopara</title></circle>
+<circle cx="112.5" cy="253.2" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Virar</title></circle>
+<circle cx="128.8" cy="1243.7" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Chhatrapati Shivaji Maharaj Terminus</title></circle>
+<circle cx="129.6" cy="1225.2" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Masjid</title></circle>
+<circle cx="130.9" cy="1209.5" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Sandhurst Road</title></circle>
+<circle cx="109.6" cy="1180.0" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Byculla</title></circle>
+<circle cx="107.7" cy="1159.3" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Chinchpokli</title></circle>
+<circle cx="109.1" cy="1145.2" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Currey Road</title></circle>
+<circle cx="112.2" cy="1111.7" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Parel</title></circle>
+<circle cx="141.5" cy="1077.4" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Matunga</title></circle>
+<circle cx="187.2" cy="1027.4" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Sion</title></circle>
+<circle cx="271.7" cy="951.2" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Kurla</title></circle>
+<circle cx="331.5" cy="874.5" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Vidyavihar</title></circle>
+<circle cx="357.3" cy="859.2" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Ghatkopar</title></circle>
+<circle cx="390.6" cy="778.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Vikhroli</title></circle>
+<circle cx="380.6" cy="732.8" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Kanjur Marg</title></circle>
+<circle cx="395.0" cy="703.5" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Bhandup</title></circle>
+<circle cx="407.7" cy="681.6" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Nahur</title></circle>
+<circle cx="420.5" cy="649.3" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Mulund</title></circle>
+<circle cx="451.7" cy="631.3" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Thane</title></circle>
+<circle cx="485.7" cy="622.4" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Kalva</title></circle>
+<circle cx="533.3" cy="643.5" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Mumbra</title></circle>
+<circle cx="563.2" cy="652.6" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Diva Junction</title></circle>
+<circle cx="607.0" cy="624.4" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Kopar</title></circle>
+<circle cx="617.9" cy="615.2" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Dombivli</title></circle>
+<circle cx="631.2" cy="604.6" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Thakurli</title></circle>
+<circle cx="672.1" cy="599.6" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Kalyan Junction</title></circle>
+<circle cx="704.4" cy="593.6" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Shahad</title></circle>
+<circle cx="714.1" cy="559.0" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Ambivli</title></circle>
+<circle cx="743.2" cy="525.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Titwala</title></circle>
+<circle cx="744.3" cy="443.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Khadavli</title></circle>
+<circle cx="786.0" cy="390.5" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Vasind</title></circle>
+<circle cx="822.1" cy="359.7" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Asangaon</title></circle>
+<circle cx="826.5" cy="288.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Atgaon</title></circle>
+<circle cx="840.0" cy="240.9" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Thansit</title></circle>
+<circle cx="876.6" cy="217.8" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Khardi</title></circle>
+<circle cx="894.3" cy="173.3" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Umbermali</title></circle>
+<circle cx="940.0" cy="164.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Kasara</title></circle>
+<circle cx="697.1" cy="616.0" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Vithalwadi</title></circle>
+<circle cx="718.7" cy="638.6" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Ulhasnagar</title></circle>
+<circle cx="746.2" cy="657.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Ambarnath</title></circle>
+<circle cx="816.4" cy="742.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Badlapur</title></circle>
+<circle cx="886.7" cy="870.7" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Vangani</title></circle>
+<circle cx="903.4" cy="921.8" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Shelu</title></circle>
+<circle cx="902.7" cy="981.6" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Neral Junction</title></circle>
+<circle cx="909.6" cy="1071.6" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Bhivpuri Road</title></circle>
+<circle cx="888.8" cy="1164.9" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Karjat</title></circle>
+<circle cx="883.4" cy="1207.2" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Palasdhari</title></circle>
+<circle cx="872.0" cy="1263.8" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Kelavli</title></circle>
+<circle cx="870.6" cy="1279.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Dolavli</title></circle>
+<circle cx="880.1" cy="1310.7" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Lowjee</title></circle>
+<circle cx="885.6" cy="1335.8" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Khopoli</title></circle>
+<circle cx="142.0" cy="1201.3" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Dockyard Road</title></circle>
+<circle cx="139.5" cy="1181.5" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Reay Road</title></circle>
+<circle cx="134.4" cy="1164.1" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Cotton Green</title></circle>
+<circle cx="163.9" cy="1142.6" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Sewri</title></circle>
+<circle cx="172.1" cy="1111.0" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Wadala Road</title></circle>
+<circle cx="190.7" cy="1054.4" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Guru Tegh Bahadur Nagar</title></circle>
+<circle cx="211.6" cy="1014.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Chuna Bhatti</title></circle>
+<circle cx="312.3" cy="940.0" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Tilak Nagar</title></circle>
+<circle cx="341.7" cy="949.0" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Chembur</title></circle>
+<circle cx="374.1" cy="972.1" r="2.5" fill="#0b0b0b" opacity="0.85"><title>Govandi</title></circle>
+<circle cx="408.8" cy="992.8" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Mankhurd</title></circle>
+<circle cx="528.9" cy="931.0" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Vashi</title></circle>
+<circle cx="545.2" cy="923.6" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Sanpada</title></circle>
+<circle cx="557.5" cy="948.3" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Juinagar</title></circle>
+<circle cx="553.4" cy="1002.9" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Nerul</title></circle>
+<circle cx="551.9" cy="1030.2" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Seawoods</title></circle>
+<circle cx="578.1" cy="1036.5" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>CBD Belapur</title></circle>
+<circle cx="615.5" cy="1010.1" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Kharghar</title></circle>
+<circle cx="637.2" cy="1028.0" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Mansarovar</title></circle>
+<circle cx="654.3" cy="1043.8" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Khandeshwar</title></circle>
+<circle cx="683.7" cy="1071.9" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Panvel</title></circle>
+<circle cx="165.5" cy="1068.5" r="2.5" fill="#0b0b0b" opacity="0.85"><title>King's Circle</title></circle>
+<circle cx="557.4" cy="897.9" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Turbhe</title></circle>
+<circle cx="544.6" cy="829.5" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Koparkhairne</title></circle>
+<circle cx="534.8" cy="796.5" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Ghansoli</title></circle>
+<circle cx="521.0" cy="746.6" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Rabale</title></circle>
+<circle cx="506.5" cy="697.2" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Airoli</title></circle>
+<circle cx="488.0" cy="649.6" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Digha Gaon</title></circle>
+<circle cx="543.4" cy="1130.6" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Baman-Dongri</title></circle>
+<circle cx="520.5" cy="1164.9" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Kharkopar</title></circle>
+<circle cx="502.1" cy="1255.6" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Ranjanpada</title></circle>
+<circle cx="449.3" cy="1283.9" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Nhava Sheva</title></circle>
+<circle cx="399.9" cy="1317.6" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Dronagiri</title></circle>
+<circle cx="375.8" cy="1325.5" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="1"><title>Uran City</title></circle>
+<circle cx="330.7" cy="956.7" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="0.55"><title>Chembur</title></circle>
+<circle cx="314.8" cy="993.5" r="2.5" fill="#0b0b0b" opacity="0.45"><title>VNP &amp; RC Marg Junction</title></circle>
+<circle cx="305.1" cy="1024.8" r="2.5" fill="#0b0b0b" opacity="0.45"><title>Fertilizer Township</title></circle>
+<circle cx="305.5" cy="1049.7" r="2.5" fill="#0b0b0b" opacity="0.45"><title>Bharat Petroleum</title></circle>
+<circle cx="287.5" cy="1072.9" r="2.5" fill="#0b0b0b" opacity="0.45"><title>Mysore Colony</title></circle>
+<circle cx="240.6" cy="1075.9" r="2.5" fill="#0b0b0b" opacity="0.45"><title>Bhakti Park</title></circle>
+<circle cx="230.3" cy="1051.4" r="2.5" fill="#0b0b0b" opacity="0.45"><title>Wadala Depot</title></circle>
+<circle cx="216.9" cy="1057.8" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="0.55"><title>Guru Tegh Bahadur Nagar</title></circle>
+<circle cx="201.5" cy="1074.6" r="2.5" fill="#0b0b0b" opacity="0.45"><title>Antop Hill</title></circle>
+<circle cx="190.3" cy="1090.2" r="2.5" fill="#0b0b0b" opacity="0.45"><title>Acharya Atre Nagar</title></circle>
+<circle cx="177.8" cy="1099.3" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="0.55"><title>Wadala Bridge</title></circle>
+<circle cx="152.5" cy="1104.8" r="2.5" fill="#0b0b0b" opacity="0.45"><title>Dadar East</title></circle>
+<circle cx="140.9" cy="1118.4" r="2.5" fill="#0b0b0b" opacity="0.45"><title>Naigaon</title></circle>
+<circle cx="132.6" cy="1134.2" r="2.5" fill="#0b0b0b" opacity="0.45"><title>Ambedkar Nagar</title></circle>
+<circle cx="132.3" cy="1148.4" r="2.5" fill="#0b0b0b" opacity="0.45"><title>Mint Colony</title></circle>
+<circle cx="97.2" cy="1150.4" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="0.55"><title>Lower Parel</title></circle>
+<circle cx="96.0" cy="1164.8" r="4.6" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.9" opacity="0.55"><title>Sant Gadge Maharaj Chowk</title></circle></g>
+<g><text x="458.7" y="633.9" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Thane</text>
+<text x="278.7" y="953.8" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Kurla</text>
+<text x="210.0" y="501.9" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Dahisar (East)</text>
+<text x="96.8" y="988.9" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Bandra</text>
+<text x="136.6" y="1227.9" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Masjid</text>
+<text x="137.9" y="1212.1" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Sandhurst Road</text>
+<text x="116.6" y="1182.7" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Byculla</text>
+<text x="624.9" y="617.9" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Dombivli</text>
+<text x="679.1" y="602.3" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Kalyan Junction</text>
+<text x="560.4" y="1005.5" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Nerul</text>
+<text x="558.9" y="1032.9" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Seawoods</text>
+<text x="86.3" y="1234.7" font-size="7.4" text-anchor="end" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Marine Lines</text>
+<text x="85.9" y="1221.3" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Charni Road</text>
+<text x="66.5" y="1187.9" font-size="7.4" text-anchor="end" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Mumbai Central</text>
+<text x="129.2" y="1041.8" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Mahim Junction</text>
+<text x="86.4" y="925.3" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Khar Road</text>
+<text x="94.7" y="860.1" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Santa Cruz</text>
+<text x="116.0" y="792.2" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Vile Parle</text>
+<text x="152.9" y="691.2" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Jogeshwari</text>
+<text x="158.8" y="665.0" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Ram Mandir</text>
+<text x="159.8" y="639.4" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Goregaon</text>
+<text x="185.0" y="534.0" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Borivali</text>
+<text x="178.1" y="503.1" font-size="7.4" text-anchor="end" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Dahisar</text>
+<text x="186.0" y="459.0" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Mira Road</text>
+<text x="180.7" y="420.2" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Bhayandar</text>
+<text x="170.2" y="369.7" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Naigaon</text>
+<text x="147.0" y="334.5" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Vasai Road</text>
+<text x="127.6" y="294.9" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Nalla Sopara</text>
+<text x="119.5" y="255.9" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Virar</text>
+<text x="135.0" y="1203.9" font-size="7.4" text-anchor="end" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Dockyard Road</text>
+<text x="146.5" y="1184.1" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Reay Road</text>
+<text x="141.4" y="1166.8" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Cotton Green</text>
+<text x="170.9" y="1145.2" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Sewri</text>
+<text x="179.1" y="1113.7" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Wadala Road</text>
+<text x="535.9" y="933.7" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Vashi</text>
+<text x="545.2" y="915.6" font-size="7.4" text-anchor="middle" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Sanpada</text>
+<text x="564.5" y="950.9" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Juinagar</text>
+<text x="622.5" y="1012.8" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Kharghar</text>
+<text x="644.2" y="1030.6" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Mansarovar</text>
+<text x="661.3" y="1046.5" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Khandeshwar</text>
+<text x="690.7" y="1074.5" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Panvel</text>
+<text x="564.4" y="900.5" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Turbhe</text>
+<text x="551.6" y="832.2" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Koparkhairne</text>
+<text x="541.8" y="799.1" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Ghansoli</text>
+<text x="528.0" y="749.3" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Rabale</text>
+<text x="513.5" y="699.9" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Airoli</text>
+<text x="495.0" y="652.2" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Digha Gaon</text>
+<text x="550.4" y="1133.3" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Baman-Dongri</text>
+<text x="527.5" y="1167.6" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Kharkopar</text>
+<text x="509.1" y="1258.2" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Ranjanpada</text>
+<text x="456.3" y="1286.5" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Nhava Sheva</text>
+<text x="406.9" y="1320.2" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Dronagiri</text>
+<text x="368.8" y="1328.2" font-size="7.4" text-anchor="end" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Uran City</text>
+<text x="69.3" y="722.6" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Versova</text>
+<text x="83.9" y="715.5" font-size="7.4" text-anchor="middle" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">D. N. Nagar</text>
+<text x="148.7" y="732.9" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Andheri</text>
+<text x="167.3" y="750.8" font-size="7.4" text-anchor="middle" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Western Express Highway (eastbound)</text>
+<text x="263.5" y="763.6" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Marol Naka</text>
+<text x="363.8" y="848.8" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Ghatkopar</text>
+<text x="92.3" y="705.6" font-size="7.4" text-anchor="middle" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Andheri (West)</text>
+<text x="428.5" y="984.0" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Mandale</text>
+<text x="397.1" y="983.4" font-size="7.4" text-anchor="end" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Mankhurd</text>
+<text x="343.4" y="994.3" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Diamond Garden</text>
+<text x="264.7" y="707.5" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Aarey JVLR</text>
+<text x="109.6" y="875.8" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Santacruz</text>
+<text x="100.3" y="1045.9" font-size="7.4" text-anchor="end" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Shitala Devi Mandir</text>
+<text x="114.3" y="1085.0" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Dadar</text>
+<text x="83.0" y="1179.0" font-size="7.4" text-anchor="end" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Mahalaxmi</text>
+<text x="74.5" y="1203.6" font-size="7.4" text-anchor="end" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Grant Road</text>
+<text x="84.8" y="1221.8" font-size="7.4" text-anchor="end" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Girgaon</text>
+<text x="106.3" y="1244.3" font-size="7.4" text-anchor="middle" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Kalbadevi</text>
+<text x="115.7" y="1261.3" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Churchgate</text>
+<text x="105.2" y="1285.5" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Cuffe Parade</text>
+<text x="235.6" y="462.1" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Kashigaon</text>
+<text x="673.6" y="911.3" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Pendhar</text>
+<text x="595.8" y="1015.6" font-size="7.4" text-anchor="end" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Belpada</text>
+<text x="99.0" y="1141.2" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Lower Parel</text>
+<text x="110.2" y="1123.7" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Prabhadevi</text>
+<text x="136.0" y="1076.6" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Matunga Road</text>
+<text x="109.1" y="1158.2" font-size="7.4" text-anchor="middle" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Currey Road</text>
+<text x="119.2" y="1114.4" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Parel</text>
+<text x="141.5" y="1069.4" font-size="7.4" text-anchor="middle" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Matunga</text>
+<text x="947.0" y="166.9" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Kasara</text>
+<text x="892.6" y="1338.5" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Khopoli</text>
+<text x="197.7" y="1057.0" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Guru Tegh Bahadur Nagar</text>
+<text x="348.7" y="951.7" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Chembur</text>
+<text x="184.8" y="1102.0" font-size="7.4" text-anchor="start" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Wadala Bridge</text>
+<text x="89.0" y="1167.5" font-size="7.4" text-anchor="end" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Sant Gadge Maharaj Chowk</text></g>
+<g><rect x="6" y="16" width="228" height="215" fill="#fcfcfb" stroke="#e1e0d9"/>
+<text x="14" y="30" font-size="10.5" font-weight="600" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Lines</text>
+<line x1="14" y1="34" x2="42" y2="34" stroke="#b9a624" stroke-width="3.2" stroke-linecap="round"/><text x="50" y="37.4" font-size="9.4" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Western Line</text><line x1="14" y1="51" x2="42" y2="51" stroke="#227702" stroke-width="3.2" stroke-linecap="round"/><text x="50" y="54.4" font-size="9.4" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Central Line</text><line x1="14" y1="68" x2="42" y2="68" stroke="#b4065f" stroke-width="3.2" stroke-linecap="round"/><text x="50" y="71.4" font-size="9.4" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Harbour Line</text><line x1="14" y1="85" x2="42" y2="85" stroke="#773ac1" stroke-width="3.2" stroke-linecap="round"/><text x="50" y="88.4" font-size="9.4" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Trans-Harbour Line</text><line x1="14" y1="102" x2="42" y2="102" stroke="#be6b0b" stroke-width="3.2" stroke-linecap="round"/><text x="50" y="105.4" font-size="9.4" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Nerul–Uran Line</text><line x1="14" y1="119" x2="42" y2="119" stroke="#0559d2" stroke-width="3.2" stroke-linecap="round"/><text x="50" y="122.4" font-size="9.4" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Metro Line 1</text><line x1="14" y1="136" x2="42" y2="136" stroke="#ff7643" stroke-width="3.2" stroke-linecap="round"/><text x="50" y="139.4" font-size="9.4" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Metro Lines 2A &amp; 2B</text><line x1="14" y1="153" x2="42" y2="153" stroke="#2fb5d8" stroke-width="3.2" stroke-linecap="round"/><text x="50" y="156.4" font-size="9.4" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Metro Line 3</text><line x1="14" y1="170" x2="42" y2="170" stroke="#b58bf9" stroke-width="3.2" stroke-linecap="round"/><text x="50" y="173.4" font-size="9.4" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Metro Lines 7 &amp; 9</text><line x1="14" y1="187" x2="42" y2="187" stroke="#12c281" stroke-width="3.2" stroke-linecap="round"/><text x="50" y="190.4" font-size="9.4" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Navi Mumbai Metro</text><line x1="14" y1="204" x2="42" y2="204" stroke="#898781" stroke-width="3.2" stroke-dasharray="7 5" stroke-linecap="round"/><text x="50" y="207.4" font-size="9.4" fill="#0b0b0b" font-family="system-ui,-apple-system,sans-serif">Monorail (suspended)</text></g>
+<text x="14" y="1474" font-size="8.4" fill="#52514e" font-family="system-ui,-apple-system,sans-serif">Station and route data © OpenStreetMap contributors, ODbL 1.0.</text>
+<text x="14" y="1486" font-size="8.4" fill="#52514e" font-family="system-ui,-apple-system,sans-serif">Not affiliated with or endorsed by MMRDA, MMRC, MMOPL, MMMOCL, CIDCO or Indian Railways.</text>
+</svg>

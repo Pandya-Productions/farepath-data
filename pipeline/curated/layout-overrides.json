@@ -1,0 +1,29 @@
+{
+  "$comment": [
+    "Manual layout nudges, applied LAST by src/layout.ts — after projection, radial compression",
+    "and overlap relaxation. Keys are `Station Name|operator-id`, because a name alone is",
+    "ambiguous (Ghatkopar, Marol Naka and Chembur each exist on two operators).",
+    "",
+    "Coordinates are in canvas units: 1000 x 1500, origin top-left, y increasing downward.",
+    "",
+    "This file is intentionally EMPTY for now. The automated pipeline places all 218 stations and",
+    "the collision-avoiding label placer positions 88 of 92 candidate labels, which is legible",
+    "enough to review and ship behind the app's zoom-based level-of-detail. Hand-tuning positions",
+    "is a visual task that needs a human iterating on out/layout.svg, and guessing coordinates",
+    "without looking would make the map worse, not better.",
+    "",
+    "KNOWN CROWDED AREAS, in priority order — these are where nudges will earn their keep:",
+    "  1. The Andheri cluster. Six stations across four operators sit within ~120 units:",
+    "     Andheri (suburban, Western + Harbour), Andheri (Metro Line 1), Andheri (West) and",
+    "     D. N. Nagar (Metro 2A), Versova (Metro 1), Gundavali and Western Express Highway",
+    "     (eastbound) (Metro 1/7). Their labels overlap and four labels are currently dropped.",
+    "  2. South Mumbai below Dadar, where Line 3 runs parallel to the Western and Harbour lines",
+    "     through a narrow strip.",
+    "  3. Dadar itself — Western, Central and Line 3 stations plus the Monorail nearby.",
+    "",
+    "How to work on it: run `npm run layout`, open out/layout.svg in a browser, drag-read the",
+    "coordinates you want from the rendered positions, add entries here, and re-run. Each entry",
+    "must carry a `reason` so a later maintainer can tell a deliberate nudge from a stray edit."
+  ],
+  "stations": {}
+}

@@ -1,0 +1,75 @@
+{
+  "$comment": [
+    "Fare authorities. An 'operator' here is a TICKETING boundary, not a mode: crossing between",
+    "two operators restarts that operator's minimum fare and requires a paid transfer.",
+    "",
+    "This is why Mumbai Metro is split three ways. MMOPL (Line 1), MMMOCL (Lines 2A/2B/7/9) and",
+    "MMRC (Line 3) are separate companies with separate fare tables. Treating them as one operator",
+    "would under-charge every Line 1 <-> Line 3 journey and wrongly model Marol Naka as a free",
+    "platform change rather than the paid interchange it is.",
+    "",
+    "`status` gates ROUTING. A suspended operator stays in the dataset so users can search its",
+    "stations and be told the truth, but no route may be planned over it."
+  ],
+  "operators": [
+    {
+      "id": "mumbai-metro-1",
+      "name": "Mumbai Metro Line 1",
+      "shortName": "Metro Line 1",
+      "authority": "Mumbai Metro One Pvt Ltd (MMOPL)",
+      "fareRule": "distance_slab",
+      "status": "operating",
+      "classes": ["standard"]
+    },
+    {
+      "id": "mumbai-metro-mmmocl",
+      "name": "Mumbai Metro (Lines 2A, 2B, 7, 9)",
+      "shortName": "Mumbai Metro",
+      "authority": "Maha Mumbai Metro Operation Corporation Ltd (MMMOCL)",
+      "fareRule": "distance_slab",
+      "status": "operating",
+      "classes": ["standard"]
+    },
+    {
+      "id": "mumbai-metro-3",
+      "name": "Mumbai Metro Line 3",
+      "shortName": "Metro Line 3",
+      "authority": "Mumbai Metro Rail Corporation Ltd (MMRC)",
+      "fareRule": "distance_slab",
+      "status": "operating",
+      "classes": ["standard"]
+    },
+    {
+      "id": "navi-mumbai-metro",
+      "name": "Navi Mumbai Metro Line 1",
+      "shortName": "Navi Mumbai Metro",
+      "authority": "CIDCO / MMRDA",
+      "fareRule": "distance_slab",
+      "status": "operating",
+      "classes": ["standard"]
+    },
+    {
+      "id": "mumbai-suburban",
+      "name": "Mumbai Suburban Railway",
+      "shortName": "Local Train",
+      "authority": "Indian Railways (Western & Central Railway)",
+      "fareRule": "distance_slab",
+      "status": "operating",
+      "classes": ["second"],
+      "$classesNote": "First class and AC are DELIBERATELY OMITTED from v1. No primary-source fare table could be obtained for them, and a wrong first-class fare (₹100+) misleads a user far more than an absent one. See slabs.json → mumbai-suburban."
+    },
+    {
+      "id": "mumbai-monorail",
+      "name": "Mumbai Monorail",
+      "shortName": "Monorail",
+      "authority": "MMRDA",
+      "fareRule": "station_pair_matrix",
+      "status": "suspended",
+      "statusSince": "2025-09-20",
+      "statusSource": "https://mmrda.maharashtra.gov.in/en/division/mono-piu/present-status",
+      "statusVerifiedOn": "2026-08-06",
+      "statusNote": "MMRDA states: 'Monorail services in both directions between Chembur and Sant Gadge Maharaj Chowk will remain suspended until further notice.' Suspended since 20 Sept 2025 for rolling-stock replacement and CBTC signalling work. A restart has been reported as expected but requires final Urban Development Department clearance, which was still pending as of 6 Aug 2026. The line therefore MUST NOT be used for routing; its stations remain searchable so users are told it is suspended rather than finding nothing.",
+      "classes": ["standard"]
+    }
+  ]
+}

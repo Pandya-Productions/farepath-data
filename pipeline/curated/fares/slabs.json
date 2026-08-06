@@ -1,0 +1,226 @@
+{
+  "$comment": [
+    "Distance-slab fare tables, in PAISE (integers — never floats for money).",
+    "",
+    "`maxKm` is an INCLUSIVE upper bound; the last entry in each table uses maxKm: null to mean",
+    "'and beyond'. Slabs must be listed in ascending order.",
+    "",
+    "`confidence` is load-bearing and propagates all the way to the UI:",
+    "  verified  — the slab boundaries and amounts come from the operator or from multiple",
+    "              independent reports that agree, AND a published station-pair fare reproduces.",
+    "  estimated — the min/max are sourced but the intermediate boundaries are inferred. The UI",
+    "              labels these fares approximate and tells the user to check at the counter.",
+    "",
+    "Nothing here may be silently upgraded to 'verified'. Raising a confidence level requires a",
+    "primary source recorded in `source`."
+  ],
+  "tables": [
+    {
+      "operator": "mumbai-metro-3",
+      "class": "standard",
+      "confidence": "verified",
+      "source": "https://themetrorailguy.com/mumbai-metro-aqua-line-information-route-map-fares-timings-tenders-status-updates/ ; corroborated by Free Press Journal and Newsband fare-structure reports",
+      "verifiedOn": "2026-08-06",
+      "validation": "Measured Aarey JVLR → Cuffe Parade is 32.69 km, which falls in the 30–36 km slab and yields ₹60 — exactly the published end-to-end fare. The 36–42 km = ₹70 band, missing from earlier reporting, was confirmed.",
+      "slabs": [
+        {
+          "maxKm": 3,
+          "farePaise": 1000
+        },
+        {
+          "maxKm": 12,
+          "farePaise": 2000
+        },
+        {
+          "maxKm": 18,
+          "farePaise": 3000
+        },
+        {
+          "maxKm": 24,
+          "farePaise": 4000
+        },
+        {
+          "maxKm": 30,
+          "farePaise": 5000
+        },
+        {
+          "maxKm": 36,
+          "farePaise": 6000
+        },
+        {
+          "maxKm": 42,
+          "farePaise": 7000
+        },
+        {
+          "maxKm": null,
+          "farePaise": 8000
+        }
+      ],
+      "conflictingReport": "A press report (Free Press Journal) quotes Aarey JVLR -> BKC at Rs 40 while also describing that leg as 'approximately 20 km'. The official Line 3 phase-1 length for exactly that pair is 12.69 km (Wikipedia/MMRC), and we measure 12.01 km station-to-station, which falls in the 12-18 km slab and yields Rs 30. The report's distance is demonstrably wrong, so its fare is treated as the weaker datum and Rs 30 is shipped. OPEN QUESTION: confirm against an MMRC fare chart or a ticket before launch; if Rs 40 is correct, the slab boundaries below are wrong, not just this pair."
+    },
+    {
+      "operator": "mumbai-metro-1",
+      "class": "standard",
+      "confidence": "estimated",
+      "source": "Range ₹10–₹40 and the Versova→Ghatkopar = ₹30 data point are widely reported (99acres, NoBroker, mumbaimetroroute). The intermediate slab boundaries are INFERRED.",
+      "verifiedOn": "2026-08-06",
+      "validation": "The full line measures 10.90 km station-to-station, which lands in the 8–12 km slab and yields ₹30 — matching the published Versova→Ghatkopar fare. Note the ₹40 slab is unreachable on an 11.4 km line and is retained only for completeness.",
+      "openQuestion": "Obtain MMOPL's published slab table to confirm the 3 km / 8 km / 12 km boundaries.",
+      "slabs": [
+        {
+          "maxKm": 3,
+          "farePaise": 1000
+        },
+        {
+          "maxKm": 8,
+          "farePaise": 2000
+        },
+        {
+          "maxKm": 12,
+          "farePaise": 3000
+        },
+        {
+          "maxKm": null,
+          "farePaise": 4000
+        }
+      ]
+    },
+    {
+      "operator": "mumbai-metro-mmmocl",
+      "class": "standard",
+      "confidence": "estimated",
+      "source": "Minimum ₹10 for 3 km and maximum ₹50 for 30 km are reported for Lines 2A and 7 (Free Press Journal, Oneindia, curlytales). Intermediate boundaries are INFERRED by mirroring the Line 3 structure, capped at ₹50.",
+      "verifiedOn": "2026-08-06",
+      "validation": "None available — no published station-pair fare was found to reproduce against. This is the weakest metro table.",
+      "openQuestion": "Obtain the MMMOCL/MMRDA published slab table. Also confirm that Lines 2B and 9 (opened 7 Apr 2026) use the same table as 2A/7 rather than their own.",
+      "slabs": [
+        {
+          "maxKm": 3,
+          "farePaise": 1000
+        },
+        {
+          "maxKm": 12,
+          "farePaise": 2000
+        },
+        {
+          "maxKm": 18,
+          "farePaise": 3000
+        },
+        {
+          "maxKm": 24,
+          "farePaise": 4000
+        },
+        {
+          "maxKm": null,
+          "farePaise": 5000
+        }
+      ]
+    },
+    {
+      "operator": "navi-mumbai-metro",
+      "class": "standard",
+      "confidence": "estimated",
+      "source": "Minimum ₹10 reported; sources DISAGREE on the maximum (₹30 vs ₹40 end-to-end). Fares were cut by about a third in September 2024 to lift ridership. Boundaries INFERRED.",
+      "verifiedOn": "2026-08-06",
+      "validation": "None. The line measures 10.53 km station-to-station, so the top slab is reached only end-to-end.",
+      "openQuestion": "Resolve the ₹30 vs ₹40 maximum against CIDCO/MMRDA. The conservative ₹30 is used, so a wrong value under-quotes by ₹10 on the longest trip only.",
+      "slabs": [
+        {
+          "maxKm": 3,
+          "farePaise": 1000
+        },
+        {
+          "maxKm": 8,
+          "farePaise": 2000
+        },
+        {
+          "maxKm": null,
+          "farePaise": 3000
+        }
+      ]
+    },
+    {
+      "operator": "mumbai-suburban",
+      "class": "second",
+      "confidence": "estimated",
+      "source": "NO PRIMARY SOURCE OBTAINED. Indian Railways publishes 'Suburban Fare table ST.pdf' (Western) and 'Suburban Fare table CT.pdf' (Central) at wr.indianrailways.gov.in, but those hosts refused connections from the build environment. The slab structure below is the standard Railway Board suburban second-class progression.",
+      "verifiedOn": "2026-08-06",
+      "validation": "Partial, and it does hold on every point available: the reported minimum of ₹5 matches; Churchgate→Bandra (~18 km) yields ₹10, matching the reported fare; Churchgate→Andheri (~28 km) yields ₹15, against a reported ₹15–20. The 2025 Railway fare rationalisation explicitly left SUBURBAN fares unchanged, so the structure is at least stable.",
+      "openQuestion": "TOP PRE-LAUNCH BLOCKER. Fetch the two official PDFs from an Indian network connection and either confirm these values or correct them, then raise confidence to 'verified'. Until then the UI must label all suburban fares approximate.",
+      "slabs": [
+        {
+          "maxKm": 10,
+          "farePaise": 500
+        },
+        {
+          "maxKm": 20,
+          "farePaise": 1000
+        },
+        {
+          "maxKm": 30,
+          "farePaise": 1500
+        },
+        {
+          "maxKm": 40,
+          "farePaise": 2000
+        },
+        {
+          "maxKm": 50,
+          "farePaise": 2500
+        },
+        {
+          "maxKm": 60,
+          "farePaise": 3000
+        },
+        {
+          "maxKm": 70,
+          "farePaise": 3500
+        },
+        {
+          "maxKm": 80,
+          "farePaise": 4000
+        },
+        {
+          "maxKm": 90,
+          "farePaise": 4500
+        },
+        {
+          "maxKm": 100,
+          "farePaise": 5000
+        },
+        {
+          "maxKm": 110,
+          "farePaise": 5500
+        },
+        {
+          "maxKm": 120,
+          "farePaise": 6000
+        },
+        {
+          "maxKm": null,
+          "farePaise": 6500
+        }
+      ]
+    }
+  ],
+  "omitted": {
+    "$comment": "Classes and operators deliberately shipped WITHOUT fares, so the omission is a recorded decision rather than an oversight.",
+    "entries": [
+      {
+        "operator": "mumbai-suburban",
+        "classes": [
+          "first",
+          "ac"
+        ],
+        "reason": "No fare table or reliable multiplier could be sourced. First class is roughly an order of magnitude more expensive than second, so a guess would misstate the fare by ₹100 or more. The app offers second class only and says so."
+      },
+      {
+        "operator": "mumbai-monorail",
+        "classes": [
+          "standard"
+        ],
+        "reason": "Services are suspended (see operators.json). The official station-pair matrix IS captured in overrides.json for the eventual restart, but a fare for a line you cannot board would be actively misleading, so no fare is shown while status is 'suspended'."
+      }
+    ]
+  }
+}

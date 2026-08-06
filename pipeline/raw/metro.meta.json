@@ -1,0 +1,11 @@
+{
+  "query": "[out:json][timeout:180];\nrel[\"route\"=\"subway\"][\"network\"~\"Mumbai Metro\",i](18.60,72.60,20.10,73.70);\n(._;>>;);\nout body;",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "fetchedAt": "2026-08-06T04:58:10.892Z",
+  "osmTimestamp": "2026-08-06T04:57:05Z",
+  "counts": {
+    "nodes": 2366,
+    "ways": 69,
+    "relations": 14
+  }
+}

@@ -1,0 +1,548 @@
+{
+  "$comment": [
+    "CONFIRMED walk interchanges between DISTINCT stations. Generated from",
+    "out/interchange-candidates.json and then decided by hand — the pipeline proposes, a human",
+    "disposes, because whether a walk transfer exists and how long it takes are real-world facts.",
+    "",
+    "Stations are identified by (name, operator). Name alone is ambiguous: 'Lower Parel' and",
+    "'Currey Road' form TWO different candidate pairs (Western<->Central, and Central<->Monorail).",
+    "",
+    "Walk times are DERIVED from the policy below rather than typed in, so they stay consistent.",
+    "They are estimates, and deliberately lower-risk than fare estimates: a wrong walk time only",
+    "reorders route suggestions, whereas a wrong fare misinforms a purchase. Fare is unaffected —",
+    "crossing between operators always restarts that operator's fare regardless of walk time.",
+    "",
+    "Rejections are recorded with reasons so a future maintainer can see what was considered.",
+    "Reviewed 2026-08-06."
+  ],
+  "policy": {
+    "walkSpeedMps": 1.2,
+    "$walkSpeedNote": "Conservative urban walking pace including stairs, crowds and street crossings.",
+    "crossOperatorGateS": 240,
+    "$crossOperatorNote": "Exit gates, buying/validating a separate ticket, then entry gates. Mumbai operators do not share ticketing.",
+    "sameOperatorGateS": 120,
+    "$sameOperatorNote": "Walking between two separate stations of one operator; no new ticket needed mid-journey.",
+    "samePaidArea": false,
+    "$samePaidAreaNote": "All links here join separate stations, so none is inside a single paid area."
+  },
+  "links": [
+    {
+      "a": {
+        "name": "Ghatkopar",
+        "operator": "mumbai-metro-1"
+      },
+      "b": {
+        "name": "Ghatkopar",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 74,
+      "reason": "Official Line 1 / Central Line interchange at Ghatkopar; direct foot-overbridge connection."
+    },
+    {
+      "a": {
+        "name": "D. N. Nagar",
+        "operator": "mumbai-metro-1"
+      },
+      "b": {
+        "name": "Andheri (West)",
+        "operator": "mumbai-metro-mmmocl"
+      },
+      "distanceM": 129,
+      "reason": "Official Line 1 / Line 2A interchange (D. N. Nagar–Andheri West)."
+    },
+    {
+      "a": {
+        "name": "Mankhurd",
+        "operator": "mumbai-metro-mmmocl"
+      },
+      "b": {
+        "name": "Mankhurd",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 137,
+      "reason": "Line 2B / Harbour Line connection at Mankhurd."
+    },
+    {
+      "a": {
+        "name": "Currey Road",
+        "operator": "mumbai-suburban"
+      },
+      "b": {
+        "name": "Lower Parel",
+        "operator": "mumbai-monorail"
+      },
+      "distanceM": 151,
+      "reason": "Central Line Currey Road to Monorail Lower Parel — short street-level walk."
+    },
+    {
+      "a": {
+        "name": "Marol Naka",
+        "operator": "mumbai-metro-1"
+      },
+      "b": {
+        "name": "Marol Naka",
+        "operator": "mumbai-metro-3"
+      },
+      "distanceM": 153,
+      "reason": "Line 1 / Line 3 interchange at Marol Naka. Separate fare authorities (MMOPL and MMRC), so this is a paid transfer, not a platform change."
+    },
+    {
+      "a": {
+        "name": "Wadala Road",
+        "operator": "mumbai-suburban"
+      },
+      "b": {
+        "name": "Wadala Bridge",
+        "operator": "mumbai-monorail"
+      },
+      "distanceM": 157,
+      "reason": "Harbour Line Wadala Road to Monorail Wadala Bridge."
+    },
+    {
+      "a": {
+        "name": "CBD Belapur",
+        "operator": "navi-mumbai-metro"
+      },
+      "b": {
+        "name": "CBD Belapur",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 211,
+      "reason": "Navi Mumbai Metro / Harbour, Trans-Harbour and Uran lines at CBD Belapur."
+    },
+    {
+      "a": {
+        "name": "Western Express Highway (eastbound)",
+        "operator": "mumbai-metro-1"
+      },
+      "b": {
+        "name": "Gundavali",
+        "operator": "mumbai-metro-mmmocl"
+      },
+      "distanceM": 223,
+      "reason": "Official Line 1 / Line 7 interchange (Western Express Highway–Gundavali)."
+    },
+    {
+      "a": {
+        "name": "Grant Road",
+        "operator": "mumbai-metro-3"
+      },
+      "b": {
+        "name": "Grant Road",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 226,
+      "reason": "Line 3 / Western Line at Grant Road."
+    },
+    {
+      "a": {
+        "name": "Jagannath Shankar Sheth",
+        "operator": "mumbai-metro-3"
+      },
+      "b": {
+        "name": "Mumbai Central",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 266,
+      "reason": "Line 3 Jagannath Shankar Sheth to Western Line Mumbai Central."
+    },
+    {
+      "a": {
+        "name": "Prabhadevi",
+        "operator": "mumbai-suburban"
+      },
+      "b": {
+        "name": "Parel",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 306,
+      "reason": "Prabhadevi (Western) to Parel (Central) — long-established, heavily used walking transfer."
+    },
+    {
+      "a": {
+        "name": "Lower Parel",
+        "operator": "mumbai-suburban"
+      },
+      "b": {
+        "name": "Lower Parel",
+        "operator": "mumbai-monorail"
+      },
+      "distanceM": 307,
+      "reason": "Western Line Lower Parel to Monorail Lower Parel."
+    },
+    {
+      "a": {
+        "name": "Andheri",
+        "operator": "mumbai-metro-1"
+      },
+      "b": {
+        "name": "Andheri",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 310,
+      "reason": "Line 1 / Western and Harbour lines at Andheri — a major interchange."
+    },
+    {
+      "a": {
+        "name": "Churchgate",
+        "operator": "mumbai-metro-3"
+      },
+      "b": {
+        "name": "Churchgate",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 330,
+      "reason": "Line 3 / Western Line at Churchgate."
+    },
+    {
+      "a": {
+        "name": "Mahalaxmi",
+        "operator": "mumbai-metro-3"
+      },
+      "b": {
+        "name": "Mahalaxmi",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 347,
+      "reason": "Line 3 / Western Line at Mahalaxmi."
+    },
+    {
+      "a": {
+        "name": "Lower Parel",
+        "operator": "mumbai-suburban"
+      },
+      "b": {
+        "name": "Currey Road",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 356,
+      "reason": "Western Line Lower Parel to Central Line Currey Road — recognised walking transfer."
+    },
+    {
+      "a": {
+        "name": "Chhatrapati Shivaji Maharaj Terminus",
+        "operator": "mumbai-metro-3"
+      },
+      "b": {
+        "name": "Chhatrapati Shivaji Maharaj Terminus",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 357,
+      "reason": "Line 3 / Central and Harbour lines at CSMT."
+    },
+    {
+      "a": {
+        "name": "Matunga Road",
+        "operator": "mumbai-suburban"
+      },
+      "b": {
+        "name": "Matunga",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 362,
+      "reason": "Matunga Road (Western) to Matunga (Central) — recognised walking transfer. Deliberately NOT merged: these are different stations."
+    },
+    {
+      "a": {
+        "name": "Chembur",
+        "operator": "mumbai-suburban"
+      },
+      "b": {
+        "name": "Chembur",
+        "operator": "mumbai-monorail"
+      },
+      "distanceM": 427,
+      "reason": "Harbour Line / Monorail at Chembur."
+    },
+    {
+      "a": {
+        "name": "Kalbadevi",
+        "operator": "mumbai-metro-3"
+      },
+      "b": {
+        "name": "Marine Lines",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 431,
+      "reason": "Line 3 Kalbadevi to Western Line Marine Lines."
+    },
+    {
+      "a": {
+        "name": "Belpada",
+        "operator": "navi-mumbai-metro"
+      },
+      "b": {
+        "name": "Kharghar",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 457,
+      "reason": "Navi Mumbai Metro Belpada to Harbour/Trans-Harbour Kharghar."
+    },
+    {
+      "a": {
+        "name": "Mahalaxmi",
+        "operator": "mumbai-suburban"
+      },
+      "b": {
+        "name": "Sant Gadge Maharaj Chowk",
+        "operator": "mumbai-monorail"
+      },
+      "distanceM": 498,
+      "reason": "Western Line Mahalaxmi to Monorail Sant Gadge Maharaj Chowk (Jacob Circle)."
+    },
+    {
+      "a": {
+        "name": "Girgaon",
+        "operator": "mumbai-metro-3"
+      },
+      "b": {
+        "name": "Charni Road",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 508,
+      "reason": "Line 3 Girgaon to Western Line Charni Road."
+    },
+    {
+      "a": {
+        "name": "Mahalaxmi",
+        "operator": "mumbai-metro-3"
+      },
+      "b": {
+        "name": "Sant Gadge Maharaj Chowk",
+        "operator": "mumbai-monorail"
+      },
+      "distanceM": 524,
+      "reason": "Line 3 Mahalaxmi to Monorail Sant Gadge Maharaj Chowk."
+    },
+    {
+      "a": {
+        "name": "Shitala Devi Mandir",
+        "operator": "mumbai-metro-3"
+      },
+      "b": {
+        "name": "Mahim Junction",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 579,
+      "reason": "Line 3 Shitala Devi Mandir to Mahim Junction."
+    },
+    {
+      "a": {
+        "name": "Guru Tegh Bahadur Nagar",
+        "operator": "mumbai-suburban"
+      },
+      "b": {
+        "name": "Guru Tegh Bahadur Nagar",
+        "operator": "mumbai-monorail"
+      },
+      "distanceM": 700,
+      "reason": "Harbour Line / Monorail at Guru Tegh Bahadur Nagar. Long walk, but the stations share a name and there is no shorter connection."
+    },
+    {
+      "a": {
+        "name": "Dadar",
+        "operator": "mumbai-metro-3"
+      },
+      "b": {
+        "name": "Dadar",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 726,
+      "reason": "Line 3 / Western and Central lines at Dadar. Long walk, but a major and officially recognised interchange."
+    },
+    {
+      "a": {
+        "name": "Santacruz",
+        "operator": "mumbai-metro-3"
+      },
+      "b": {
+        "name": "Santa Cruz",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 731,
+      "reason": "Line 3 Santacruz to Western Line Santa Cruz. Same location, two operators, no shorter connection."
+    }
+  ],
+  "rejected": [
+    {
+      "a": {
+        "name": "Airport Road",
+        "operator": "mumbai-metro-1"
+      },
+      "b": {
+        "name": "Marol Naka",
+        "operator": "mumbai-metro-3"
+      },
+      "distanceM": 448,
+      "reason": "Redundant — Marol Naka (153 m) is the Line 1 / Line 3 interchange."
+    },
+    {
+      "a": {
+        "name": "Hutatma Chowk",
+        "operator": "mumbai-metro-3"
+      },
+      "b": {
+        "name": "Churchgate",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 541,
+      "reason": "Redundant — Churchgate already connects Line 3 to the Western Line at 330 m."
+    },
+    {
+      "a": {
+        "name": "Girgaon",
+        "operator": "mumbai-metro-3"
+      },
+      "b": {
+        "name": "Marine Lines",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 621,
+      "reason": "Redundant — covered by Girgaon–Charni Road (508 m) and Kalbadevi–Marine Lines (431 m)."
+    },
+    {
+      "a": {
+        "name": "Chinchpokli",
+        "operator": "mumbai-suburban"
+      },
+      "b": {
+        "name": "Lower Parel",
+        "operator": "mumbai-monorail"
+      },
+      "distanceM": 649,
+      "reason": "No recognised transfer; 649 m with better alternatives nearby."
+    },
+    {
+      "a": {
+        "name": "Chinchpokli",
+        "operator": "mumbai-suburban"
+      },
+      "b": {
+        "name": "Sant Gadge Maharaj Chowk",
+        "operator": "mumbai-monorail"
+      },
+      "distanceM": 649,
+      "reason": "No recognised transfer; 649 m with better alternatives nearby."
+    },
+    {
+      "a": {
+        "name": "Dharavi",
+        "operator": "mumbai-metro-3"
+      },
+      "b": {
+        "name": "Mahim Junction",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 653,
+      "reason": "Not a recognised transfer; Shitala Devi Mandir–Mahim Junction (579 m) serves this connection."
+    },
+    {
+      "a": {
+        "name": "Wadala Road",
+        "operator": "mumbai-suburban"
+      },
+      "b": {
+        "name": "Dadar East",
+        "operator": "mumbai-monorail"
+      },
+      "distanceM": 695,
+      "reason": "Redundant — Wadala Road already connects to the Monorail at Wadala Bridge (157 m)."
+    },
+    {
+      "a": {
+        "name": "Goregaon (East)",
+        "operator": "mumbai-metro-mmmocl"
+      },
+      "b": {
+        "name": "Ram Mandir",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 707,
+      "reason": "Not a recognised transfer; Goregaon has its own Western and Harbour platforms."
+    },
+    {
+      "a": {
+        "name": "Sion",
+        "operator": "mumbai-suburban"
+      },
+      "b": {
+        "name": "Chuna Bhatti",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 724,
+      "reason": "Not a recognised transfer between Sion and Chuna Bhatti."
+    },
+    {
+      "a": {
+        "name": "Mandale",
+        "operator": "mumbai-metro-mmmocl"
+      },
+      "b": {
+        "name": "Mankhurd",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 725,
+      "reason": "Redundant — Mankhurd already connects Line 2B to the Harbour Line at 137 m."
+    },
+    {
+      "a": {
+        "name": "Utsav Chowk",
+        "operator": "navi-mumbai-metro"
+      },
+      "b": {
+        "name": "Kharghar",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 740,
+      "reason": "Redundant — Belpada–Kharghar (457 m) already connects Navi Mumbai Metro to the Harbour Line."
+    },
+    {
+      "a": {
+        "name": "Anand Nagar",
+        "operator": "mumbai-metro-mmmocl"
+      },
+      "b": {
+        "name": "Pandurang Wadi",
+        "operator": "mumbai-metro-mmmocl"
+      },
+      "distanceM": 764,
+      "reason": "Not a transfer — two nearby MMMOCL stations already connected via Dahisar (East)."
+    },
+    {
+      "a": {
+        "name": "Azad Nagar",
+        "operator": "mumbai-metro-1"
+      },
+      "b": {
+        "name": "Andheri (West)",
+        "operator": "mumbai-metro-mmmocl"
+      },
+      "distanceM": 766,
+      "reason": "Redundant — D. N. Nagar–Andheri (West) (129 m) is the official Line 1 / Line 2A interchange."
+    },
+    {
+      "a": {
+        "name": "Hutatma Chowk",
+        "operator": "mumbai-metro-3"
+      },
+      "b": {
+        "name": "Chhatrapati Shivaji Maharaj Terminus",
+        "operator": "mumbai-suburban"
+      },
+      "distanceM": 774,
+      "reason": "Redundant — CSMT already connects Line 3 to the Central and Harbour lines at 357 m."
+    },
+    {
+      "a": {
+        "name": "Diamond Garden",
+        "operator": "mumbai-metro-mmmocl"
+      },
+      "b": {
+        "name": "VNP & RC Marg Junction",
+        "operator": "mumbai-monorail"
+      },
+      "distanceM": 797,
+      "reason": "Marginal 797 m walk with no recognised transfer."
+    }
+  ]
+}

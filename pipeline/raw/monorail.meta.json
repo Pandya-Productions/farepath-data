@@ -1,0 +1,11 @@
+{
+  "query": "[out:json][timeout:180];\n(\n  rel[\"route\"=\"monorail\"](18.60,72.60,20.10,73.70);\n  rel[\"route\"=\"train\"][\"name\"~\"monorail\",i](18.60,72.60,20.10,73.70);\n  way[\"railway\"=\"monorail\"](18.60,72.60,20.10,73.70);\n  node[\"station\"=\"monorail\"](18.60,72.60,20.10,73.70);\n);\n(._;>>;);\nout body;",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "fetchedAt": "2026-08-06T04:58:20.742Z",
+  "osmTimestamp": "2026-08-06T04:57:05Z",
+  "counts": {
+    "nodes": 1111,
+    "ways": 37,
+    "relations": 0
+  }
+}

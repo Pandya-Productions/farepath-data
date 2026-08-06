@@ -1,0 +1,728 @@
+{
+  "$comment": [
+    "Station-pair fare overrides. An override always wins over the slab calculation, because a",
+    "published exact fare is better evidence than a distance bucket.",
+    "",
+    "This is the OFFICIAL MMRDA Mumbai Monorail single-journey-ticket matrix, transcribed from",
+    "https://mmrda.maharashtra.gov.in/en/division/mono-piu/fare-structure on 2026-08-06. Fares are",
+    "symmetric by nature, but the published table contradicts itself on 19 pairs; where it does, the",
+    "HIGHER fare is used, so an error can only ever over-quote by ₹10 and never under-quote.",
+    "",
+    "The station-code order in this table (GMC..CHR) is the exact reverse of our curated monorail",
+    "station order, which independently confirms that sequence against the operator.",
+    "",
+    "IMPORTANT: the Monorail is currently SUSPENDED, so these fares are not shown to users. They are",
+    "captured now so the data is ready when service resumes."
+  ],
+  "overrides": [
+    {
+      "operator": "mumbai-monorail",
+      "class": "standard",
+      "confidence": "verified",
+      "source": "https://mmrda.maharashtra.gov.in/en/division/mono-piu/fare-structure",
+      "verifiedOn": "2026-08-06",
+      "asymmetricPairsResolvedToMax": 19,
+      "pairs": [
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "Lower Parel",
+          "farePaise": 1000
+        },
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "Mint Colony",
+          "farePaise": 1000
+        },
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "Ambedkar Nagar",
+          "farePaise": 2000
+        },
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "Naigaon",
+          "farePaise": 2000
+        },
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "Dadar East",
+          "farePaise": 2000
+        },
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "Wadala Bridge",
+          "farePaise": 2000
+        },
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "Acharya Atre Nagar",
+          "farePaise": 2000
+        },
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "Antop Hill",
+          "farePaise": 2000
+        },
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "Guru Tegh Bahadur Nagar",
+          "farePaise": 2000
+        },
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "Wadala Depot",
+          "farePaise": 2000
+        },
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "Bhakti Park",
+          "farePaise": 3000
+        },
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "Mysore Colony",
+          "farePaise": 3000
+        },
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "Bharat Petroleum",
+          "farePaise": 3000
+        },
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "Fertilizer Township",
+          "farePaise": 3000
+        },
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "VNP & RC Marg Junction",
+          "farePaise": 4000
+        },
+        {
+          "a": "Sant Gadge Maharaj Chowk",
+          "b": "Chembur",
+          "farePaise": 4000
+        },
+        {
+          "a": "Lower Parel",
+          "b": "Mint Colony",
+          "farePaise": 1000
+        },
+        {
+          "a": "Lower Parel",
+          "b": "Ambedkar Nagar",
+          "farePaise": 1000
+        },
+        {
+          "a": "Lower Parel",
+          "b": "Naigaon",
+          "farePaise": 2000
+        },
+        {
+          "a": "Lower Parel",
+          "b": "Dadar East",
+          "farePaise": 2000
+        },
+        {
+          "a": "Lower Parel",
+          "b": "Wadala Bridge",
+          "farePaise": 2000
+        },
+        {
+          "a": "Lower Parel",
+          "b": "Acharya Atre Nagar",
+          "farePaise": 2000
+        },
+        {
+          "a": "Lower Parel",
+          "b": "Antop Hill",
+          "farePaise": 2000
+        },
+        {
+          "a": "Lower Parel",
+          "b": "Guru Tegh Bahadur Nagar",
+          "farePaise": 2000
+        },
+        {
+          "a": "Lower Parel",
+          "b": "Wadala Depot",
+          "farePaise": 2000
+        },
+        {
+          "a": "Lower Parel",
+          "b": "Bhakti Park",
+          "farePaise": 3000,
+          "note": "Published table is asymmetric here (LOP->BHP=₹30, BHP->LOP=₹20); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Lower Parel",
+          "b": "Mysore Colony",
+          "farePaise": 3000
+        },
+        {
+          "a": "Lower Parel",
+          "b": "Bharat Petroleum",
+          "farePaise": 3000
+        },
+        {
+          "a": "Lower Parel",
+          "b": "Fertilizer Township",
+          "farePaise": 3000
+        },
+        {
+          "a": "Lower Parel",
+          "b": "VNP & RC Marg Junction",
+          "farePaise": 3000
+        },
+        {
+          "a": "Lower Parel",
+          "b": "Chembur",
+          "farePaise": 4000
+        },
+        {
+          "a": "Mint Colony",
+          "b": "Ambedkar Nagar",
+          "farePaise": 1000
+        },
+        {
+          "a": "Mint Colony",
+          "b": "Naigaon",
+          "farePaise": 1000
+        },
+        {
+          "a": "Mint Colony",
+          "b": "Dadar East",
+          "farePaise": 2000
+        },
+        {
+          "a": "Mint Colony",
+          "b": "Wadala Bridge",
+          "farePaise": 2000
+        },
+        {
+          "a": "Mint Colony",
+          "b": "Acharya Atre Nagar",
+          "farePaise": 2000
+        },
+        {
+          "a": "Mint Colony",
+          "b": "Antop Hill",
+          "farePaise": 2000
+        },
+        {
+          "a": "Mint Colony",
+          "b": "Guru Tegh Bahadur Nagar",
+          "farePaise": 2000
+        },
+        {
+          "a": "Mint Colony",
+          "b": "Wadala Depot",
+          "farePaise": 2000
+        },
+        {
+          "a": "Mint Colony",
+          "b": "Bhakti Park",
+          "farePaise": 3000,
+          "note": "Published table is asymmetric here (MIC->BHP=₹30, BHP->MIC=₹20); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Mint Colony",
+          "b": "Mysore Colony",
+          "farePaise": 3000
+        },
+        {
+          "a": "Mint Colony",
+          "b": "Bharat Petroleum",
+          "farePaise": 3000
+        },
+        {
+          "a": "Mint Colony",
+          "b": "Fertilizer Township",
+          "farePaise": 3000
+        },
+        {
+          "a": "Mint Colony",
+          "b": "VNP & RC Marg Junction",
+          "farePaise": 3000
+        },
+        {
+          "a": "Mint Colony",
+          "b": "Chembur",
+          "farePaise": 3000
+        },
+        {
+          "a": "Ambedkar Nagar",
+          "b": "Naigaon",
+          "farePaise": 1000
+        },
+        {
+          "a": "Ambedkar Nagar",
+          "b": "Dadar East",
+          "farePaise": 1000
+        },
+        {
+          "a": "Ambedkar Nagar",
+          "b": "Wadala Bridge",
+          "farePaise": 2000
+        },
+        {
+          "a": "Ambedkar Nagar",
+          "b": "Acharya Atre Nagar",
+          "farePaise": 2000
+        },
+        {
+          "a": "Ambedkar Nagar",
+          "b": "Antop Hill",
+          "farePaise": 2000
+        },
+        {
+          "a": "Ambedkar Nagar",
+          "b": "Guru Tegh Bahadur Nagar",
+          "farePaise": 2000
+        },
+        {
+          "a": "Ambedkar Nagar",
+          "b": "Wadala Depot",
+          "farePaise": 2000
+        },
+        {
+          "a": "Ambedkar Nagar",
+          "b": "Bhakti Park",
+          "farePaise": 2000
+        },
+        {
+          "a": "Ambedkar Nagar",
+          "b": "Mysore Colony",
+          "farePaise": 2000
+        },
+        {
+          "a": "Ambedkar Nagar",
+          "b": "Bharat Petroleum",
+          "farePaise": 3000
+        },
+        {
+          "a": "Ambedkar Nagar",
+          "b": "Fertilizer Township",
+          "farePaise": 3000
+        },
+        {
+          "a": "Ambedkar Nagar",
+          "b": "VNP & RC Marg Junction",
+          "farePaise": 3000
+        },
+        {
+          "a": "Ambedkar Nagar",
+          "b": "Chembur",
+          "farePaise": 3000
+        },
+        {
+          "a": "Naigaon",
+          "b": "Dadar East",
+          "farePaise": 1000
+        },
+        {
+          "a": "Naigaon",
+          "b": "Wadala Bridge",
+          "farePaise": 1000
+        },
+        {
+          "a": "Naigaon",
+          "b": "Acharya Atre Nagar",
+          "farePaise": 2000,
+          "note": "Published table is asymmetric here (NAI->AAN=₹20, AAN->NAI=₹10); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Naigaon",
+          "b": "Antop Hill",
+          "farePaise": 2000,
+          "note": "Published table is asymmetric here (NAI->ANH=₹20, ANH->NAI=₹10); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Naigaon",
+          "b": "Guru Tegh Bahadur Nagar",
+          "farePaise": 2000
+        },
+        {
+          "a": "Naigaon",
+          "b": "Wadala Depot",
+          "farePaise": 2000
+        },
+        {
+          "a": "Naigaon",
+          "b": "Bhakti Park",
+          "farePaise": 2000
+        },
+        {
+          "a": "Naigaon",
+          "b": "Mysore Colony",
+          "farePaise": 2000
+        },
+        {
+          "a": "Naigaon",
+          "b": "Bharat Petroleum",
+          "farePaise": 3000,
+          "note": "Published table is asymmetric here (NAI->BHA=₹30, BHA->NAI=₹20); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Naigaon",
+          "b": "Fertilizer Township",
+          "farePaise": 3000
+        },
+        {
+          "a": "Naigaon",
+          "b": "VNP & RC Marg Junction",
+          "farePaise": 3000
+        },
+        {
+          "a": "Naigaon",
+          "b": "Chembur",
+          "farePaise": 3000
+        },
+        {
+          "a": "Dadar East",
+          "b": "Wadala Bridge",
+          "farePaise": 1000
+        },
+        {
+          "a": "Dadar East",
+          "b": "Acharya Atre Nagar",
+          "farePaise": 1000
+        },
+        {
+          "a": "Dadar East",
+          "b": "Antop Hill",
+          "farePaise": 2000,
+          "note": "Published table is asymmetric here (DAE->ANH=₹20, ANH->DAE=₹10); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Dadar East",
+          "b": "Guru Tegh Bahadur Nagar",
+          "farePaise": 2000
+        },
+        {
+          "a": "Dadar East",
+          "b": "Wadala Depot",
+          "farePaise": 2000
+        },
+        {
+          "a": "Dadar East",
+          "b": "Bhakti Park",
+          "farePaise": 2000
+        },
+        {
+          "a": "Dadar East",
+          "b": "Mysore Colony",
+          "farePaise": 2000
+        },
+        {
+          "a": "Dadar East",
+          "b": "Bharat Petroleum",
+          "farePaise": 2000
+        },
+        {
+          "a": "Dadar East",
+          "b": "Fertilizer Township",
+          "farePaise": 3000,
+          "note": "Published table is asymmetric here (DAE->FET=₹30, FET->DAE=₹20); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Dadar East",
+          "b": "VNP & RC Marg Junction",
+          "farePaise": 3000
+        },
+        {
+          "a": "Dadar East",
+          "b": "Chembur",
+          "farePaise": 3000
+        },
+        {
+          "a": "Wadala Bridge",
+          "b": "Acharya Atre Nagar",
+          "farePaise": 1000
+        },
+        {
+          "a": "Wadala Bridge",
+          "b": "Antop Hill",
+          "farePaise": 2000,
+          "note": "Published table is asymmetric here (WAB->ANH=₹20, ANH->WAB=₹10); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Wadala Bridge",
+          "b": "Guru Tegh Bahadur Nagar",
+          "farePaise": 2000,
+          "note": "Published table is asymmetric here (WAB->GTB=₹20, GTB->WAB=₹10); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Wadala Bridge",
+          "b": "Wadala Depot",
+          "farePaise": 2000,
+          "note": "Published table is asymmetric here (WAB->WAD=₹20, WAD->WAB=₹10); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Wadala Bridge",
+          "b": "Bhakti Park",
+          "farePaise": 2000
+        },
+        {
+          "a": "Wadala Bridge",
+          "b": "Mysore Colony",
+          "farePaise": 2000
+        },
+        {
+          "a": "Wadala Bridge",
+          "b": "Bharat Petroleum",
+          "farePaise": 2000
+        },
+        {
+          "a": "Wadala Bridge",
+          "b": "Fertilizer Township",
+          "farePaise": 2000
+        },
+        {
+          "a": "Wadala Bridge",
+          "b": "VNP & RC Marg Junction",
+          "farePaise": 2000
+        },
+        {
+          "a": "Wadala Bridge",
+          "b": "Chembur",
+          "farePaise": 3000
+        },
+        {
+          "a": "Acharya Atre Nagar",
+          "b": "Antop Hill",
+          "farePaise": 1000
+        },
+        {
+          "a": "Acharya Atre Nagar",
+          "b": "Guru Tegh Bahadur Nagar",
+          "farePaise": 2000,
+          "note": "Published table is asymmetric here (AAN->GTB=₹20, GTB->AAN=₹10); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Acharya Atre Nagar",
+          "b": "Wadala Depot",
+          "farePaise": 2000,
+          "note": "Published table is asymmetric here (AAN->WAD=₹20, WAD->AAN=₹10); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Acharya Atre Nagar",
+          "b": "Bhakti Park",
+          "farePaise": 2000
+        },
+        {
+          "a": "Acharya Atre Nagar",
+          "b": "Mysore Colony",
+          "farePaise": 2000
+        },
+        {
+          "a": "Acharya Atre Nagar",
+          "b": "Bharat Petroleum",
+          "farePaise": 2000
+        },
+        {
+          "a": "Acharya Atre Nagar",
+          "b": "Fertilizer Township",
+          "farePaise": 2000
+        },
+        {
+          "a": "Acharya Atre Nagar",
+          "b": "VNP & RC Marg Junction",
+          "farePaise": 2000
+        },
+        {
+          "a": "Acharya Atre Nagar",
+          "b": "Chembur",
+          "farePaise": 3000,
+          "note": "Published table is asymmetric here (AAN->CHR=₹20, CHR->AAN=₹30); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Antop Hill",
+          "b": "Guru Tegh Bahadur Nagar",
+          "farePaise": 1000
+        },
+        {
+          "a": "Antop Hill",
+          "b": "Wadala Depot",
+          "farePaise": 2000,
+          "note": "Published table is asymmetric here (ANH->WAD=₹20, WAD->ANH=₹10); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Antop Hill",
+          "b": "Bhakti Park",
+          "farePaise": 2000
+        },
+        {
+          "a": "Antop Hill",
+          "b": "Mysore Colony",
+          "farePaise": 2000
+        },
+        {
+          "a": "Antop Hill",
+          "b": "Bharat Petroleum",
+          "farePaise": 2000
+        },
+        {
+          "a": "Antop Hill",
+          "b": "Fertilizer Township",
+          "farePaise": 2000
+        },
+        {
+          "a": "Antop Hill",
+          "b": "VNP & RC Marg Junction",
+          "farePaise": 2000
+        },
+        {
+          "a": "Antop Hill",
+          "b": "Chembur",
+          "farePaise": 2000
+        },
+        {
+          "a": "Guru Tegh Bahadur Nagar",
+          "b": "Wadala Depot",
+          "farePaise": 1000
+        },
+        {
+          "a": "Guru Tegh Bahadur Nagar",
+          "b": "Bhakti Park",
+          "farePaise": 2000,
+          "note": "Published table is asymmetric here (GTB->BHP=₹20, BHP->GTB=₹10); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Guru Tegh Bahadur Nagar",
+          "b": "Mysore Colony",
+          "farePaise": 2000
+        },
+        {
+          "a": "Guru Tegh Bahadur Nagar",
+          "b": "Bharat Petroleum",
+          "farePaise": 2000
+        },
+        {
+          "a": "Guru Tegh Bahadur Nagar",
+          "b": "Fertilizer Township",
+          "farePaise": 2000
+        },
+        {
+          "a": "Guru Tegh Bahadur Nagar",
+          "b": "VNP & RC Marg Junction",
+          "farePaise": 2000
+        },
+        {
+          "a": "Guru Tegh Bahadur Nagar",
+          "b": "Chembur",
+          "farePaise": 2000
+        },
+        {
+          "a": "Wadala Depot",
+          "b": "Bhakti Park",
+          "farePaise": 1000
+        },
+        {
+          "a": "Wadala Depot",
+          "b": "Mysore Colony",
+          "farePaise": 2000,
+          "note": "Published table is asymmetric here (WAD->MYC=₹20, MYC->WAD=₹10); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Wadala Depot",
+          "b": "Bharat Petroleum",
+          "farePaise": 2000
+        },
+        {
+          "a": "Wadala Depot",
+          "b": "Fertilizer Township",
+          "farePaise": 2000
+        },
+        {
+          "a": "Wadala Depot",
+          "b": "VNP & RC Marg Junction",
+          "farePaise": 2000
+        },
+        {
+          "a": "Wadala Depot",
+          "b": "Chembur",
+          "farePaise": 2000
+        },
+        {
+          "a": "Bhakti Park",
+          "b": "Mysore Colony",
+          "farePaise": 1000
+        },
+        {
+          "a": "Bhakti Park",
+          "b": "Bharat Petroleum",
+          "farePaise": 1000
+        },
+        {
+          "a": "Bhakti Park",
+          "b": "Fertilizer Township",
+          "farePaise": 1000
+        },
+        {
+          "a": "Bhakti Park",
+          "b": "VNP & RC Marg Junction",
+          "farePaise": 2000,
+          "note": "Published table is asymmetric here (BHP->VRJ=₹10, VRJ->BHP=₹20); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Bhakti Park",
+          "b": "Chembur",
+          "farePaise": 2000
+        },
+        {
+          "a": "Mysore Colony",
+          "b": "Bharat Petroleum",
+          "farePaise": 1000
+        },
+        {
+          "a": "Mysore Colony",
+          "b": "Fertilizer Township",
+          "farePaise": 1000
+        },
+        {
+          "a": "Mysore Colony",
+          "b": "VNP & RC Marg Junction",
+          "farePaise": 2000,
+          "note": "Published table is asymmetric here (MYC->VRJ=₹20, VRJ->MYC=₹10); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Mysore Colony",
+          "b": "Chembur",
+          "farePaise": 2000,
+          "note": "Published table is asymmetric here (MYC->CHR=₹20, CHR->MYC=₹10); the higher value is used so the app never under-quotes."
+        },
+        {
+          "a": "Bharat Petroleum",
+          "b": "Fertilizer Township",
+          "farePaise": 1000
+        },
+        {
+          "a": "Bharat Petroleum",
+          "b": "VNP & RC Marg Junction",
+          "farePaise": 1000
+        },
+        {
+          "a": "Bharat Petroleum",
+          "b": "Chembur",
+          "farePaise": 1000
+        },
+        {
+          "a": "Fertilizer Township",
+          "b": "VNP & RC Marg Junction",
+          "farePaise": 1000
+        },
+        {
+          "a": "Fertilizer Township",
+          "b": "Chembur",
+          "farePaise": 1000
+        },
+        {
+          "a": "VNP & RC Marg Junction",
+          "b": "Chembur",
+          "farePaise": 1000
+        }
+      ]
+    }
+  ]
+}

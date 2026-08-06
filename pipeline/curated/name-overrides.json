@@ -1,0 +1,155 @@
+{
+  "$comment": [
+    "Human-curated corrections to OSM station naming. Every entry records WHY it exists,",
+    "because a future maintainer must be able to tell a real correction from a guess.",
+    "Verified 2026-08-06 against `npm run inspect` output."
+  ],
+  "nodeNames": {
+    "$comment": "OSM nodes that carry no `name` tag at all. Without these the station silently vanishes from the graph — a whole missing station, not a cosmetic defect.",
+    "631525335": {
+      "name": "Matunga Road",
+      "reason": "Node has name:hi (माटुंगा रोड) and ref=MRU but no `name` tag. It is a real Western Line station between Dadar and Mahim Junction, and its absence would break Western Line adjacency.",
+      "evidence": "OSM node 631525335, tags IR:zone=WR:CCG, ref=MRU, railway=stop; position 19.02816,72.84673 falls between Dadar and Mahim on the Churchgate–Virar sequence."
+    }
+  },
+  "stripSuffixes": {
+    "$comment": [
+      "Parenthetical and trailing qualifiers that exist only to disambiguate OSM nodes and",
+      "must not reach the user. Applied to build the DISPLAY name.",
+      "Order matters: these are applied as written."
+    ],
+    "parenthetical": [
+      "Line 1",
+      "Line 3",
+      "Western Line",
+      "Harbour Line",
+      "Central",
+      "Suburban",
+      "local",
+      "WR",
+      "CR",
+      "Western"
+    ],
+    "trailingWords": [
+      "Metro"
+    ],
+    "bracketedPatterns": [
+      "^Line\\s"
+    ],
+    "$bracketedNote": "OSM disambiguates shared-name metro platforms with square brackets, e.g. 'Dahisar (East) [Line 2]' / '[Line 7]' / '[Line 9]' — three nodes for ONE interchange. Only brackets whose contents match these patterns are stripped. NOTE: the parenthetical '(East)' is deliberately KEPT — 'Dahisar East' (Metro) and 'Dahisar' (Western Line) are different stations and must not collapse."
+  },
+  "displayNames": {
+    "$comment": "Full replacements where stripping is not enough, or where the local common name differs from OSM's.",
+    "Mumbai CSMT (Suburban)": {
+      "name": "Chhatrapati Shivaji Maharaj Terminus",
+      "short": "CSMT",
+      "reason": "OSM's parenthetical is an internal qualifier. The full official name is used for display, with CSMT as the short form and both searchable."
+    },
+    "Mumbai Central (local)": {
+      "name": "Mumbai Central",
+      "reason": "'(local)' distinguishes the suburban platforms from the long-distance terminus; not meaningful to a commuter planning a suburban trip."
+    },
+    "Vadala Road": {
+      "name": "Wadala Road",
+      "reason": "OSM uses the 'Vadala' transliteration; 'Wadala' is the spelling used on station boards and by Indian Railways. Both are searchable via aliases."
+    }
+  },
+  "aliases": {
+    "$comment": [
+      "Search-only synonyms. These make search forgiving without merging distinct stations.",
+      "Transliteration variance (v/w, single/double letters) is handled HERE by explicit alias",
+      "rather than by fuzzy folding in name_norm, because aggressive folding risks colliding",
+      "genuinely different station names."
+    ],
+    "Chhatrapati Shivaji Maharaj Terminus": [
+      "CSMT",
+      "CST",
+      "VT",
+      "Victoria Terminus",
+      "Bombay VT"
+    ],
+    "Wadala Road": [
+      "Vadala Road",
+      "Wadala"
+    ],
+    "Bhayandar": [
+      "Bhayander"
+    ],
+    "Nalla Sopara": [
+      "Nallasopara",
+      "Nala Sopara"
+    ],
+    "Santa Cruz": [
+      "Santacruz"
+    ],
+    "Kalyan Junction": [
+      "Kalyan"
+    ],
+    "Diva Junction": [
+      "Diva"
+    ],
+    "Mahim Junction": [
+      "Mahim"
+    ],
+    "Neral Junction": [
+      "Neral"
+    ],
+    "Chhatrapati Shivaji Maharaj International Airport": [
+      "CSMIA",
+      "Airport",
+      "Mumbai Airport"
+    ],
+    "Bandra Kurla Complex": [
+      "BKC"
+    ],
+    "Sant Gadge Maharaj Chowk": [
+      "Jacob Circle",
+      "Mahalaxmi Monorail"
+    ]
+  },
+  "normStopWords": {
+    "$comment": "Words removed when building name_norm for MATCHING only. Never removed from display names. 'Junction' is dropped so 'Kalyan' matches 'Kalyan Junction'.",
+    "words": [
+      "junction",
+      "jn",
+      "terminus",
+      "railway",
+      "station",
+      "metro",
+      "monorail"
+    ]
+  },
+  "doNotMerge": {
+    "$comment": "Normalised names that must NEVER resolve to a single station. The clustering rule already requires proximity and a shared operator, so this is a belt-and-braces assertion: if upstream data ever drags these together, the build fails. A false merge silently corrupts every route and fare through the station. Checked by asserting no cluster with this norm exceeds maxClusterSpreadM.",
+    "names": [
+      {
+        "norm": "naigaon",
+        "maxClusterSpreadM": 300,
+        "reason": "Western Line Naigaon (19.3521N) and Monorail Naigaon (19.0095N) are unrelated stations ~38 km apart sharing a name. Name-only matching would fuse the Western Line to the Monorail.",
+        "note": "LIVE as of 2026-08-06: the Monorail is now curated in, so this guard is exercised — 'naigaon' correctly resolves to 2 separate stations (Western Line 19.3521N, Monorail 19.0095N)."
+      },
+      {
+        "norm": "matunga",
+        "maxClusterSpreadM": 300,
+        "reason": "Matunga (Central Line) and Matunga Road (Western Line) are different stations 362 m apart. They already differ after normalisation, but if a name edit upstream collapsed them the fare for any route through them would be wrong."
+      }
+    ]
+  },
+  "forceMerge": {
+    "$comment": "Station complexes the automatic rule misses because their platforms are spread further apart than the 250 m merge radius. The radius stays tight on purpose — widening it globally is how you fuse unrelated stations — so these are explicit, reviewed exceptions. Same operator only. Verified 2026-08-06 against out/interchange-candidates.json.",
+    "groups": [
+      {
+        "norm": "santacruz",
+        "operator": "mumbai-suburban",
+        "maxSpreadM": 400,
+        "reason": "Santacruz Western Line and Harbour Line platforms are one station complex, measured 255 m apart — 5 m outside the default radius."
+      },
+      {
+        "norm": "jogeshwari",
+        "operator": "mumbai-suburban",
+        "maxSpreadM": 700,
+        "reason": "Jogeshwari Western and Harbour corridor platforms are one station; OSM stop nodes sit 563 m apart along a long station footprint."
+      }
+    ]
+  }
+}

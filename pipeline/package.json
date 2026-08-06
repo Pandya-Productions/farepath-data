@@ -1,0 +1,14 @@
+{
+  "name": "@farepath/data",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Build-time transit data pipeline. Zero runtime dependencies.",
+  "scripts": {
+    "fetch": "node --experimental-strip-types src/fetch.ts",
+    "inspect": "node --experimental-strip-types src/inspect.ts",
+    "extract": "node --experimental-strip-types src/extract.ts",
+    "cluster": "node --experimental-strip-types src/cluster.ts",
+    "test": "node --experimental-strip-types --test src/*.test.ts"
+  }
+}
