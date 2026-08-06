@@ -319,7 +319,7 @@ async function main() {
 
   await writeFile(join(OUT_DIR, 'layout.json'), JSON.stringify(layout), 'utf8');
   // Only when the app is present — see the same note in build.ts.
-  const appPresent = existsSync(dirname(ASSET_DIR));
+  const appPresent = existsSync(join(ASSET_DIR, '..', 'package.json'));
   if (appPresent) await writeFile(join(ASSET_DIR, 'layout.json'), JSON.stringify(layout), 'utf8');
 
   // ── render the review SVG ─────────────────────────────────────────────────

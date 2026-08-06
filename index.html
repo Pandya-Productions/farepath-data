@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FarePath transit data</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.6;
+         max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; background: #fcfcfb; color: #0b0b0b; }
+  h1 { font-size: 1.75rem; margin-bottom: .25rem; }
+  a { color: #0559d2; }
+  code { background: rgba(0,0,0,.06); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid #e1e0d9; color: #52514e; font-size: .85rem; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a19; color:#fff; } a { color:#1c69e3; } footer { color:#c3c2b7; border-top-color:#2c2c2a; }
+    code { background: rgba(255,255,255,.1); }
+  }
+</style>
+</head>
+<body>
+<h1>FarePath transit data</h1>
+<p>The transit dataset behind the <strong>FarePath</strong> Android app — Mumbai rail stations, lines
+and fares — published under
+<a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a>, together with the full
+pipeline that produces it.</p>
+
+<p>This exists for two reasons. The dataset is derived from OpenStreetMap, which makes it a
+Derivative Database under ODbL, and share-alike requires it be offered to anyone who received it.
+And a fare app should be auditable: if the app says a journey costs ₹40, you should be able to see
+where that number came from.</p>
+
+<ul>
+  <li><a href="https://github.com/Pandya-Productions/farepath-data">Repository and rebuild instructions</a></li>
+  <li><a href="data/transit.json">transit.json</a> — 218 stations, 19 services, 6 operators</li>
+  <li><a href="data/layout.svg">layout.svg</a> — the schematic map</li>
+  <li><a href="privacy-policy.html">FarePath privacy policy</a></li>
+</ul>
+
+<p>Fare confidence is recorded per operator rather than assumed. Metro Line 3 and the Monorail
+station-pair matrix are verified against operator sources; the rest are marked <code>estimated</code>.
+The suburban second-class table is the largest known gap — Indian Railways' official fare PDFs refuse
+connections from outside India, so the primary chart could not be retrieved. First class and AC fares
+are omitted rather than guessed. Corrections with a source are very welcome.</p>
+
+<footer>
+Station and route data © OpenStreetMap contributors, ODbL 1.0. Not affiliated with or endorsed by
+MMRDA, MMRC, MMOPL, MMMOCL, CIDCO, Indian Railways, or any transit operator.
+</footer>
+</body>
+</html>

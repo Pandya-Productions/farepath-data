@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FarePath — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the FarePath Android app. FarePath collects nothing: no accounts, no analytics, no advertising, no permissions.">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.6; max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
+    background: #fcfcfb; color: #0b0b0b;
+  }
+  h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .updated { color: #52514e; font-size: 0.9rem; margin-top: 0; }
+  a { color: #0559d2; }
+  ul { padding-left: 1.25rem; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid #e1e0d9; color: #52514e; font-size: 0.85rem; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #1a1a19; color: #ffffff; }
+    .updated, footer { color: #c3c2b7; }
+    a { color: #1c69e3; }
+    footer { border-top-color: #2c2c2a; }
+  }
+</style>
+</head>
+<body>
+
+<h1>FarePath — Privacy Policy</h1>
+<p class="updated"><strong>Last updated: 6 August 2026</strong></p>
+
+<p>FarePath is an offline Mumbai rail route and fare app. This policy is short because the app does
+very little with data: it collects nothing.</p>
+
+<h2>What we collect</h2>
+<p><strong>Nothing.</strong> FarePath has no accounts, no sign-in, no analytics, no advertising SDKs,
+no crash reporting, and no tracking of any kind. We do not know who you are, where you are, or where
+you travelled.</p>
+
+<h2>What stays on your device</h2>
+<p>Your language and appearance preferences, and the origin and destination you last entered, are
+held in the app's own storage on your device. They are never transmitted anywhere. Uninstalling the
+app removes them.</p>
+
+<h2>Permissions</h2>
+<p>FarePath requests <strong>no Android permissions</strong>. It does not ask for location, storage,
+contacts, camera, or microphone access. Location permissions are explicitly blocked in the app
+manifest, so the app cannot request them even by accident through a dependency.</p>
+
+<h2>Network access</h2>
+<p>Version 1 of FarePath makes <strong>no network requests at all</strong>. The complete transit
+dataset is bundled inside the app, which is why it works in a tunnel, on an underground platform, or
+in airplane mode.</p>
+<p>A future version may add an <strong>optional</strong> data refresh, so that a corrected fare can
+reach you without waiting for an app-store update. If and when that ships:</p>
+<ul>
+  <li>it will be a plain download of a static file from a public URL;</li>
+  <li>it will send no information about you — no identifiers, no device details beyond what any HTTP
+      request unavoidably reveals to the host;</li>
+  <li>the app will remain fully functional if you never use it;</li>
+  <li>and this policy and the Play Data Safety declaration will be updated <strong>before</strong>
+      the feature is released, not after.</li>
+</ul>
+
+<h2>Children</h2>
+<p>FarePath is suitable for all ages and collects no data from anyone, including children.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy, or a correction to the transit or fare data:
+<a href="mailto:corrections@farepath.app">corrections@farepath.app</a></p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the "last updated" date above changes with it, and the version history is
+public in <a href="https://github.com/Pandya-Productions/farepath-data">this repository</a>.</p>
+
+<footer>
+FarePath is not affiliated with or endorsed by MMRDA, MMRC, MMOPL, MMMOCL, CIDCO, Indian Railways,
+or any transit operator. Station and route data © OpenStreetMap contributors, licensed under
+<a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a>.
+</footer>
+
+</body>
+</html>

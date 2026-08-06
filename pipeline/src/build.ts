@@ -354,7 +354,7 @@ async function main() {
   // The app-assets copy is written only when the app is actually present. This pipeline is also
   // published standalone (Pandya-Productions/farepath-data), where apps/ does not exist — and
   // creating a stray apps/mobile/assets/ tree there would be confusing.
-  const appPresent = existsSync(dirname(DIST_DIR));
+  const appPresent = existsSync(join(DIST_DIR, '..', 'package.json'));
   if (appPresent) {
     await mkdir(DIST_DIR, { recursive: true });
     await writeFile(join(DIST_DIR, 'transit.json'), json, 'utf8');
