@@ -9,7 +9,8 @@
  * failure exits non-zero and writes nothing.
  */
 
-import { readFile, writeFile, mkdir, stat } from 'node:fs/promises';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import { gzipSync } from 'node:zlib';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -350,9 +351,15 @@ async function main() {
 
   await mkdir(OUT_DIR, { recursive: true });
   await writeFile(join(OUT_DIR, 'transit.json'), json, 'utf8');
-  await mkdir(DIST_DIR, { recursive: true });
-  await writeFile(join(DIST_DIR, 'transit.json'), json, 'utf8');
-  console.log(`\n✓ wrote out/transit.json and apps/mobile/assets/transit.json`);
+  // The app-assets copy is written only when the app is actually present. This pipeline is also
+  // published standalone (Pandya-Productions/farepath-data), where apps/ does not exist — and
+  // creating a stray apps/mobile/assets/ tree there would be confusing.
+  const appPresent = existsSync(dirname(DIST_DIR));
+  if (appPresent) {
+    await mkdir(DIST_DIR, { recursive: true });
+    await writeFile(join(DIST_DIR, 'transit.json'), json, 'utf8');
+  }
+  console.log(`\n✓ wrote out/transit.json${appPresent ? ' and apps/mobile/assets/transit.json' : ''}`);
 }
 
 await main();

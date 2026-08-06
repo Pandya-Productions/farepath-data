@@ -318,7 +318,9 @@ async function main() {
   };
 
   await writeFile(join(OUT_DIR, 'layout.json'), JSON.stringify(layout), 'utf8');
-  await writeFile(join(ASSET_DIR, 'layout.json'), JSON.stringify(layout), 'utf8');
+  // Only when the app is present — see the same note in build.ts.
+  const appPresent = existsSync(dirname(ASSET_DIR));
+  if (appPresent) await writeFile(join(ASSET_DIR, 'layout.json'), JSON.stringify(layout), 'utf8');
 
   // ── render the review SVG ─────────────────────────────────────────────────
   const interchangeIds = new Set<number>();
@@ -419,7 +421,7 @@ ${legend}</g>
   console.log(`  labelled        ${svgLabels.length} of ${labelEntries.length} candidates (collision-avoided)`);
   const layoutKb = Buffer.byteLength(JSON.stringify(layout)) / 1024;
   console.log(`  layout.json     ${layoutKb.toFixed(1)} KB`);
-  console.log(`\n✓ wrote out/layout.json, out/layout.svg and apps/mobile/assets/layout.json`);
+  console.log(`\n✓ wrote out/layout.json, out/layout.svg${appPresent ? ' and apps/mobile/assets/layout.json' : ''}`);
   console.log(`  review it: open ${join(OUT_DIR, 'layout.svg')}`);
 }
 
