@@ -22,6 +22,7 @@ Railways, or any transit operator.
 
 ```
 data/transit.json     The shipped dataset — 218 stations, 19 services, 6 operators (96 KB)
+data/places.json      Address layer — 36,005 localities, landmarks and streets (1.6 MB)
 data/layout.json      Pre-computed schematic map coordinates
 data/layout.svg       The schematic map, viewable in any browser
 pipeline/             Everything needed to rebuild data/ from scratch
@@ -43,6 +44,8 @@ node --experimental-strip-types src/extract.ts    # assertions + along-track dis
 node --experimental-strip-types src/cluster.ts    # station identity + interchange candidates
 node --experimental-strip-types src/build.ts      # → out/transit.json
 node --experimental-strip-types src/layout.ts     # → out/layout.json + layout.svg
+node --experimental-strip-types src/fetch.ts --places   # address layer (large, changes rarely)
+node --experimental-strip-types src/build-places.ts     # → out/places.json
 node --experimental-strip-types --test src/*.test.ts
 ```
 
@@ -67,6 +70,20 @@ are real-world facts. Every curated decision in `pipeline/curated/` carries its 
 **The build fails rather than shipping quietly.** Pinned OSM relations are asserted against their
 ref, name, stop count and published route length; the routable network must be fully connected; no
 operating operator may lack a fare source; the size budget is enforced.
+
+## The address layer, and why it is landmarks rather than street addresses
+
+Measured against OSM for core Mumbai: **7,552 features carry a house number**, for a city of 20
+million. Street-address geocoding is simply not possible here from this data.
+
+That is less of a gap than it sounds, because it is not how the city works. A Mumbai address is a
+landmark plus an area — "Phoenix Mills, Lower Parel" — not a number plus a street. So
+`data/places.json` indexes the three layers that do exist and that people say out loud: 1,144
+localities, 26,512 landmarks and 8,349 streets. Each landmark and street carries its nearest
+locality, because that label is the thing that turns a name into an address.
+
+Street entries are stored as a **centroid**, which is imprecise for a long road; they are flagged
+so the app can say so rather than imply a precise point.
 
 ## Fare data quality — read this before trusting a number
 

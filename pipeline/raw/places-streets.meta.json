@@ -1,0 +1,11 @@
+{
+  "query": "[out:json][timeout:240];\nway[\"highway\"][\"name\"](18.85,72.75,19.35,73.10);\nout tags center;",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "fetchedAt": "2026-08-08T04:50:10.238Z",
+  "osmTimestamp": "2026-08-08T04:49:05Z",
+  "counts": {
+    "nodes": 0,
+    "ways": 16232,
+    "relations": 0
+  }
+}

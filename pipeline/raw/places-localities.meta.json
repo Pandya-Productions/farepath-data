@@ -1,0 +1,11 @@
+{
+  "query": "[out:json][timeout:180];\nnwr[\"place\"~\"^(suburb|neighbourhood|locality|quarter|village|town)$\"][\"name\"](18.85,72.75,19.35,73.10);\nout tags center;",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "fetchedAt": "2026-08-08T04:49:38.406Z",
+  "osmTimestamp": "2026-08-08T04:48:06Z",
+  "counts": {
+    "nodes": 1080,
+    "ways": 75,
+    "relations": 2
+  }
+}

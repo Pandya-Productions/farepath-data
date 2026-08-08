@@ -53,3 +53,59 @@ export const DATASETS: DatasetQuery[] = [
     ),
   },
 ];
+
+/**
+ * Bounding box for the PLACE index. Deliberately tighter than MMR_BBOX: a landmark is only
+ * useful if a station is walkable from it, and the far Kasara/Khopoli branches are rural.
+ */
+export const MUMBAI_URBAN_BBOX = '18.85,72.75,19.35,73.10' as const;
+
+/**
+ * Queries for the address/landmark layer.
+ *
+ * Mumbai has almost no street addresses in OSM — measured, 7,552 features carry a house number
+ * for a city of 20 million. That is not a data gap so much as how the city works: people navigate
+ * by locality and landmark ("Phoenix Mills, Lower Parel"), not house number. So the index is built
+ * from the three layers that DO exist and that people actually say out loud.
+ *
+ * `out tags center` returns a centroid for ways and relations without their geometry, which keeps
+ * the responses small — we only ever need a point per place.
+ */
+export const PLACE_DATASETS: DatasetQuery[] = [
+  {
+    name: 'places-localities',
+    description:
+      'Suburbs, neighbourhoods and villages — the highest-value layer for Mumbai, since an ' +
+      'address here is usually an area name plus a landmark.',
+    query:
+      `[out:json][timeout:180];\n` +
+      `nwr["place"~"^(suburb|neighbourhood|locality|quarter|village|town)$"]["name"](${MUMBAI_URBAN_BBOX});\n` +
+      `out tags center;`,
+  },
+  {
+    name: 'places-landmarks',
+    description: 'Named amenities, shops, offices, malls, hospitals, colleges and notable buildings.',
+    query:
+      `[out:json][timeout:240];\n` +
+      `(\n` +
+      `  nwr["amenity"]["name"](${MUMBAI_URBAN_BBOX});\n` +
+      `  nwr["shop"]["name"](${MUMBAI_URBAN_BBOX});\n` +
+      `  nwr["office"]["name"](${MUMBAI_URBAN_BBOX});\n` +
+      `  nwr["tourism"]["name"](${MUMBAI_URBAN_BBOX});\n` +
+      `  nwr["leisure"]["name"](${MUMBAI_URBAN_BBOX});\n` +
+      `  nwr["healthcare"]["name"](${MUMBAI_URBAN_BBOX});\n` +
+      `  nwr["building"]["name"](${MUMBAI_URBAN_BBOX});\n` +
+      `);\n` +
+      `out tags center;`,
+  },
+  {
+    name: 'places-streets',
+    description:
+      'Named streets. Stored as a centroid, which is imprecise for a long road — flagged in the ' +
+      'data so the UI can say so rather than implying a precise point.',
+    query:
+      `[out:json][timeout:240];\n` +
+      `way["highway"]["name"](${MUMBAI_URBAN_BBOX});\n` +
+      `out tags center;`,
+  },
+];

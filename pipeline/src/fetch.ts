@@ -7,16 +7,19 @@
  * This is the only script in the repo that touches the network.
  */
 
-import { DATASETS } from './queries.ts';
+import { DATASETS, PLACE_DATASETS } from './queries.ts';
 import { fetchDataset } from './overpass.ts';
 
 async function main() {
   const refresh = process.argv.includes('--refresh');
   const only = process.argv.find((a) => a.startsWith('--only='))?.slice('--only='.length);
 
-  const datasets = only ? DATASETS.filter((d) => d.name === only) : DATASETS;
+  // --places pulls the address/landmark layer, which is large and changes rarely, so it is not
+  // fetched by default alongside the transit topology.
+  const all = process.argv.includes('--places') ? [...DATASETS, ...PLACE_DATASETS] : DATASETS;
+  const datasets = only ? all.filter((d) => d.name === only) : all;
   if (datasets.length === 0) {
-    console.error(`No dataset matched --only=${only}. Known: ${DATASETS.map((d) => d.name).join(', ')}`);
+    console.error(`No dataset matched --only=${only}. Known: ${[...DATASETS, ...PLACE_DATASETS].map((d) => d.name).join(', ')}`);
     process.exit(1);
   }
 
